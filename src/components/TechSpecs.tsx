@@ -62,42 +62,62 @@ const specGroups = [
 
 const TechSpecs = () => {
   return (
-    <section id="ficha-tecnica" className="py-20 sm:py-28 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/30 to-background" />
+    <section id="ficha-tecnica" className="py-24 sm:py-32 relative section-divider">
+      {/* Blueprint grid background */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-secondary/20" />
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-16"
         >
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3">
-            Ficha <span className="text-gradient-gold">Técnica</span>
+          <span className="inline-block text-xs font-medium text-primary/70 tracking-[0.2em] uppercase mb-4">
+            Especificações
+          </span>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            Ficha <span className="text-gradient-gold text-glow-gold">Técnica</span>
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">
+          <p className="text-muted-foreground max-w-lg mx-auto text-base sm:text-lg">
             Todos os detalhes do Shineray T30 / TLux T30 em um só lugar.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {specGroups.map((group, i) => (
             <motion.div
               key={group.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-card border border-border rounded-lg p-6"
+              transition={{ delay: i * 0.08, duration: 0.5 }}
+              whileHover={{ y: -4, transition: { duration: 0.2 } }}
+              className="glass-card-gold rounded-xl p-6 group"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <group.icon size={20} className="text-primary" />
+              <div className="flex items-center gap-3 mb-5">
+                <motion.div
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.5 }}
+                  className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/15 transition-colors"
+                >
+                  <group.icon size={18} className="text-primary" />
+                </motion.div>
                 <h3 className="font-display text-lg font-bold">{group.title}</h3>
               </div>
+
               <div className="space-y-3">
                 {group.specs.map((spec) => (
-                  <div key={spec.label} className="flex justify-between items-baseline gap-2">
+                  <div
+                    key={spec.label}
+                    className="flex justify-between items-baseline gap-2 group/row"
+                  >
                     <span className="text-sm text-muted-foreground">{spec.label}</span>
-                    <span className="text-sm font-medium text-foreground text-right">{spec.value}</span>
+                    <span className="text-xs text-muted-foreground/30 flex-1 border-b border-dotted border-border/30 mx-2 mb-1" />
+                    <span className="text-sm font-medium text-foreground group-hover/row:text-primary transition-colors text-right">
+                      {spec.value}
+                    </span>
                   </div>
                 ))}
               </div>
