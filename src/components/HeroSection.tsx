@@ -98,7 +98,7 @@ const HeroSection = () => {
         <div
           className="absolute left-0 right-0 h-[1px] opacity-30"
           style={{
-            background: "linear-gradient(90deg, transparent, hsl(40 40% 60% / 0.4), transparent)",
+            background: "linear-gradient(90deg, transparent, hsl(210 70% 50% / 0.4), transparent)",
             animation: "scan-line 8s linear infinite",
           }}
         />

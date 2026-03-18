@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Check, X, Crown } from "lucide-react";
 
 const criteria = [
-  { label: "Preço (0km)", t30: "~R$115.000", hr: "~R$180.000", strada: "~R$130.000", t30Winner: true },
+  { label: "Preço (0km)", t30: "~R$99.970", hr: "~R$180.000", strada: "~R$130.000", t30Winner: true },
   { label: "Carga útil", t30: "1.500 kg", hr: "1.470 kg", strada: "720 kg", t30Winner: true },
   { label: "Caçamba inclusa", t30: true, hr: false, strada: true },
   { label: "CNH necessária", t30: "B", hr: "C", strada: "B", t30Winner: true },
@@ -68,12 +68,12 @@ const ComparisonTable = () => {
                   </th>
                   <th className="py-5 px-6 text-center">
                     <span className="font-display text-base font-semibold text-muted-foreground">
-                      Hyundai HR
+                      Concorrente A
                     </span>
                   </th>
                   <th className="py-5 px-6 text-center">
                     <span className="font-display text-base font-semibold text-muted-foreground">
-                      Fiat Strada
+                      Concorrente B
                     </span>
                   </th>
                 </tr>
@@ -132,8 +132,8 @@ const ComparisonTable = () => {
               <div className="grid grid-cols-3 gap-3">
                 {[
                   { name: "T30", value: row.t30, winner: row.t30Winner },
-                  { name: "HR", value: row.hr, winner: false },
-                  { name: "Strada", value: row.strada, winner: false },
+                  { name: "Conc. A", value: row.hr, winner: false },
+                  { name: "Conc. B", value: row.strada, winner: false },
                 ].map((col) => (
                   <div
                     key={col.name}
