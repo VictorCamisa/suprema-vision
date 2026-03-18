@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gauge, Fuel, Ruler, Shield, Settings, Zap } from "lucide-react";
+import { Gauge, Fuel, Ruler, Shield, Settings, Zap, MessageCircle } from "lucide-react";
 
 const specGroups = [
   {
