@@ -64,7 +64,7 @@ const ValuePillars = () => {
               className="glass-card-gold rounded-xl p-8 group cursor-default relative overflow-hidden"
             >
               {/* Background glow on hover */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-[radial-gradient(circle,hsl(40_40%_60%/0.08),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-[radial-gradient(circle,hsl(210_70%_50%/0.08),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative z-10">
                 {/* Icon */}

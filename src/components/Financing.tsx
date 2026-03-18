@@ -85,7 +85,7 @@ const Financing = () => {
           className="max-w-md mx-auto text-center mb-14 glass-card-gold rounded-2xl p-10 relative overflow-hidden"
         >
           {/* Radial glow behind price */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(40_40%_60%/0.08),transparent_70%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(210_70%_50%/0.08),transparent_70%)]" />
 
           <div className="relative z-10">
             <p className="text-sm text-muted-foreground mb-3 uppercase tracking-widest font-medium">
