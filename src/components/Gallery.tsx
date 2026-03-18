@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Play, X as XIcon, Expand } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X as XIcon, Expand, MessageCircle } from "lucide-react";
 
 const galleryImages = [
   { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png", alt: "Shineray T30 — Vista frontal" },
