@@ -52,9 +52,11 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#hero" className="flex items-center">
-          <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
+        <div className="lg:hidden flex-1" />
+        <a href="#hero" className="flex items-center justify-center lg:justify-start">
+          <img src={logoSuprema} alt="Suprema Utilitários" className="h-14 lg:h-12" />
         </a>
+        <div className="lg:hidden flex-1 flex justify-end">
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
