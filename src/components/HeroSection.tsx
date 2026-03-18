@@ -91,7 +91,7 @@ const HeroSection = () => {
       </div>
 
       {/* Radial spotlight */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse,hsl(40_40%_60%/0.08),transparent_70%)] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse,hsl(210_70%_50%/0.08),transparent_70%)] pointer-events-none" />
 
       {/* Scan line */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
