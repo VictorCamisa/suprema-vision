@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { IdCard, Package, TrendingDown } from "lucide-react";
+import { IdCard, Package, TrendingDown, MessageCircle } from "lucide-react";
 
 const pillars = [
   {
@@ -90,6 +90,24 @@ const ValuePillars = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20diferenciais%20do%20T30.&utm_source=site&utm_medium=pilares&utm_content=cta_pilares"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-magnetic inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-base px-8 py-4 rounded-lg shadow-lg shadow-[#25D366]/20"
+          >
+            <MessageCircle size={20} />
+            Tire suas Dúvidas no WhatsApp
+          </a>
+        </motion.div>
       </div>
     </section>
   );

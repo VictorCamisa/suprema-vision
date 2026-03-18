@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Play, X as XIcon, Expand } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X as XIcon, Expand, MessageCircle } from "lucide-react";
 
 const galleryImages = [
   { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png", alt: "Shineray T30 — Vista frontal" },
@@ -192,6 +192,24 @@ const Gallery = () => {
                   </span>
                 </button>
               )}
+            </motion.div>
+
+            {/* CTA after gallery */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <a
+                href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vi%20as%20fotos%20do%20T30%20e%20gostaria%20de%20agendar%20um%20test%20drive.&utm_source=site&utm_medium=galeria&utm_content=cta_galeria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-magnetic inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-base px-8 py-4 rounded-lg shadow-lg shadow-[#25D366]/20"
+              >
+                <MessageCircle size={20} />
+                Agendar Test Drive
+              </a>
             </motion.div>
           </div>
         </div>

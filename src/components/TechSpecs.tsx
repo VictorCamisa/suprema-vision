@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gauge, Fuel, Ruler, Shield, Settings, Zap } from "lucide-react";
+import { Gauge, Fuel, Ruler, Shield, Settings, Zap, MessageCircle } from "lucide-react";
 
 const specGroups = [
   {
@@ -124,6 +124,24 @@ const TechSpecs = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vi%20a%20ficha%20t%C3%A9cnica%20do%20T30%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&utm_source=site&utm_medium=ficha_tecnica&utm_content=cta_specs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-magnetic inline-flex items-center gap-2 bg-blue-gradient text-primary-foreground font-bold text-base px-8 py-4 rounded-lg shadow-blue-lg"
+          >
+            <MessageCircle size={20} />
+            Solicitar Proposta Personalizada
+          </a>
+        </motion.div>
       </div>
     </section>
   );
