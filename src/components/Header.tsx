@@ -52,8 +52,11 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#hero" className="flex items-center">
-          <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
+        {/* Spacer for mobile centering */}
+        <div className="lg:hidden w-10" />
+
+        <a href="#hero" className="flex items-center justify-center flex-1 lg:flex-none">
+          <img src={logoSuprema} alt="Suprema Utilitários" className="h-14 lg:h-12" />
         </a>
 
         {/* Desktop nav */}
