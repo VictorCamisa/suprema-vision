@@ -77,9 +77,9 @@ const HeroSection = () => {
           style={{ y: backgroundY }}
           className="absolute inset-0 bg-[url('https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png')] bg-cover bg-center"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/40 to-background" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/30 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-white/20" />
         </motion.div>
       </div>
 
