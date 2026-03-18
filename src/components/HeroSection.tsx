@@ -129,8 +129,8 @@ const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6"
           >
-            O único mini caminhão de{" "}
-            <span className="text-gradient-gold text-glow-gold">R$115 mil</span>{" "}
+            O único mini caminhão a partir de{" "}
+            <span className="text-gradient-gold text-glow-gold">R$99.970</span>{" "}
             que você dirige com{" "}
             <span className="text-gradient-gold text-glow-gold">CNH B</span>
           </motion.h1>
