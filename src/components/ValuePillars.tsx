@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { IdCard, Package, TrendingDown } from "lucide-react";
+import { IdCard, Package, TrendingDown, MessageCircle } from "lucide-react";
 
 const pillars = [
   {
