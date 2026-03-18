@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoSuprema from "@/assets/logo-suprema.png";
 
 const navItems = [
   { label: "Início", href: "#hero" },
