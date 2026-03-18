@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoSuprema from "@/assets/logo-suprema.png";
 
 const navItems = [
   { label: "Início", href: "#hero" },
@@ -51,13 +52,8 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-2 group">
-          <span className="font-display text-xl font-bold tracking-wider text-gradient-gold group-hover:text-glow-gold transition-all">
-            SUPREMA
-          </span>
-          <span className="font-display text-xs font-medium text-muted-foreground tracking-widest uppercase">
-            Utilitários
-          </span>
+        <a href="#hero" className="flex items-center">
+          <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
         </a>
 
         {/* Desktop nav */}
