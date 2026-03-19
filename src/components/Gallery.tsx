@@ -48,7 +48,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="galeria" className="py-24 sm:py-32 section-divider">
+      <section id="galeria" className="py-16 sm:py-24 section-divider">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

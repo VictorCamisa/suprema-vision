@@ -69,7 +69,7 @@ const HeroSection = () => {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-24 sm:pb-16"
     >
       {/* Dark background with image */}
       <div className="absolute inset-0 z-0 bg-[#0a1628]">
