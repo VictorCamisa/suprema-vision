@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border">
       {/* CTA */}
-      <div className="section-navy py-16 text-center">
+      <div className="section-navy-mesh section-rich py-16 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white">
             Pronto para conhecer o T30?
