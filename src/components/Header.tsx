@@ -27,15 +27,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white shadow-md"
-          : "bg-white"
-      }`}
-    >
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Mobile: menu button left */}
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? "shadow-md" : ""}`}>
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between relative">
+        {/* Mobile: hamburger left */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden text-foreground p-2"
@@ -45,12 +39,18 @@ const Header = () => {
         </button>
 
         {/* Logo: centered on mobile, left on desktop */}
-        <a href="#hero" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 flex-shrink-0">
+        <a href="#hero" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
           <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
         </a>
 
-        {/* Mobile: empty spacer right to balance */}
+        {/* Mobile: spacer to balance */}
         <div className="lg:hidden w-10" />
+
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex items-center gap-6">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
               href={item.href}
               className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
@@ -69,16 +69,9 @@ const Header = () => {
           Falar com Consultor
           <ArrowUpRight size={14} />
         </a>
-
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-foreground p-2"
-          aria-label="Menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
+      {/* Mobile nav */}
       <AnimatePresence>
         {isOpen && (
           <motion.nav
