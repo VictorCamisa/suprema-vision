@@ -65,13 +65,13 @@ function CounterStat({
 
 const SocialProof = () => {
   return (
-    <section className="py-24 sm:py-32 section-divider">
+    <section className="py-12 sm:py-16 section-divider">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <span className="inline-block text-xs font-medium text-primary/70 tracking-[0.2em] uppercase mb-4">
             Credibilidade

@@ -3,7 +3,7 @@ import { MapPin, Building, Calendar } from "lucide-react";
 
 const AboutUs = () => {
   return (
-    <section className="py-24 sm:py-32 relative section-divider">
+    <section className="py-12 sm:py-16 relative section-divider">
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-secondary/20" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">

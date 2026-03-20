@@ -1,210 +1,97 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, MessageCircle, Phone } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { MessageCircle, Phone, ChevronDown } from "lucide-react";
 
 const whatsappUrl =
   "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
 
-function AnimatedCounter({ target, suffix = "" }: { target: string; suffix?: string }) {
-  const [displayed, setDisplayed] = useState("0");
-  const ref = useRef<HTMLDivElement>(null);
-  const hasAnimated = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true;
-          const numericPart = target.replace(/[^0-9.,]/g, "");
-          const isDecimal = numericPart.includes(",");
-          const end = parseFloat(numericPart.replace(",", "."));
-          const duration = 1500;
-          const startTime = performance.now();
-
-          const tick = (now: number) => {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const current = eased * end;
-
-            if (isDecimal) {
-              setDisplayed(current.toFixed(1).replace(".", ","));
-            } else {
-              setDisplayed(Math.floor(current).toLocaleString("pt-BR"));
-            }
-
-            if (progress < 1) requestAnimationFrame(tick);
-            else setDisplayed(numericPart);
-          };
-
-          requestAnimationFrame(tick);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [target]);
-
-  return (
-    <div ref={ref} className="font-display text-3xl sm:text-4xl font-bold text-white">
-      {displayed}
-      {suffix}
-    </div>
-  );
-}
-
 const HeroSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 150]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], [0, -200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-
   return (
-    <section
-      ref={sectionRef}
-      id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-24 sm:pb-16"
-    >
-      {/* Dark background with image */}
-      <div className="absolute inset-0 z-0 bg-[#0a1628]">
-        <motion.div
-          style={{ y: backgroundY }}
-          className="absolute inset-0 bg-[url('https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png')] bg-cover bg-center"
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/85 via-[#0a1628]/50 to-[#0a1628]/95" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/80 via-transparent to-transparent" />
-        </motion.div>
-      </div>
+    <section id="hero" className="relative min-h-[85vh] flex items-center pt-20 pb-12 bg-background overflow-hidden">
+      {/* Subtle background accent */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/50 hidden lg:block" />
 
-      {/* Subtle blue glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse,hsl(210_70%_50%/0.12),transparent_70%)] pointer-events-none z-[1]" />
-
-      <motion.div style={{ y, opacity }} className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Text */}
           <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-5 py-2 mb-8"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            <span className="relative w-2 h-2">
-              <span className="absolute inset-0 rounded-full bg-blue-light animate-ping opacity-75" />
-              <span className="relative block w-2 h-2 rounded-full bg-blue-light" />
+            <span className="inline-block text-xs font-semibold text-primary tracking-[0.15em] uppercase mb-4 border border-primary/20 rounded-full px-4 py-1.5">
+              Concessionária Autorizada Shineray
             </span>
-            <span className="text-xs font-medium text-white/90 tracking-wide uppercase">
-              Concessionária Autorizada Shineray em Brasília
-            </span>
-          </motion.div>
 
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-white"
-          >
-            O único mini caminhão a partir de{" "}
-            <span className="text-blue-light">R$99.970</span>{" "}
-            que você dirige com{" "}
-            <span className="text-blue-light">CNH B</span>
-          </motion.h1>
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-5 text-foreground">
+              Shineray T30: Robustez e Eficiência para o Transporte das Suas Cargas!
+            </h1>
 
-          {/* Sub-headline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            Shineray T30 — 1.500kg de carga, 12,6 km/L na cidade, caçamba inclusa.
-            <br className="hidden sm:block" />
-            O utilitário que cabe no seu bolso e na sua habilitação.
-          </motion.p>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-lg mb-8 leading-relaxed">
+              1.500kg de carga, 12,6 km/L na cidade, caçamba inclusa. A partir de <strong className="text-primary">R$99.970</strong> — dirija com CNH B.
+            </p>
 
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-magnetic bg-[#25D366] text-white font-bold text-base px-8 py-4 rounded-lg shadow-lg shadow-[#25D366]/30 flex items-center gap-2 w-full sm:w-auto justify-center"
-            >
-              <MessageCircle size={20} />
-              Falar com Consultor
-            </a>
-            <a
-              href="tel:+556133638060"
-              className="btn-magnetic bg-blue-gradient text-white font-bold text-base px-8 py-4 rounded-lg shadow-blue-lg flex items-center gap-2 w-full sm:w-auto justify-center"
-            >
-              <Phone size={20} />
-              Ligar Agora
-            </a>
-            <a
-              href="#ficha-tecnica"
-              className="btn-magnetic border border-white/20 text-white font-semibold text-base px-8 py-4 rounded-lg hover:bg-white/5 transition-colors flex items-center gap-2 w-full sm:w-auto justify-center backdrop-blur-sm"
-            >
-              <ArrowDown size={20} />
-              Ver Ficha Técnica
-            </a>
-          </motion.div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-magnetic bg-[#25D366] text-white font-bold text-sm px-7 py-3.5 rounded-lg shadow-lg shadow-[#25D366]/25 flex items-center gap-2 justify-center"
+              >
+                <MessageCircle size={18} />
+                Fale com um consultor
+              </a>
+              <a
+                href="tel:+556133638060"
+                className="btn-magnetic bg-primary text-primary-foreground font-bold text-sm px-7 py-3.5 rounded-lg shadow-navy flex items-center gap-2 justify-center"
+              >
+                <Phone size={18} />
+                Ligar Agora
+              </a>
+            </div>
 
-          {/* Stats bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mx-auto"
-          >
-            {[
-              { target: "1.500", suffix: "kg", label: "Carga Útil" },
-              { target: "12,6", suffix: "", label: "km/L cidade" },
-              { target: "CNH B", suffix: "", label: "Habilitação", isText: true },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4">
-                {stat.isText ? (
-                  <div className="font-display text-3xl sm:text-4xl font-bold text-blue-light">
-                    CNH B
-                  </div>
-                ) : (
-                  <AnimatedCounter target={stat.target} suffix={stat.suffix} />
-                )}
-                <div className="text-xs sm:text-sm text-white/60 mt-1 font-medium">
-                  {stat.label}
+            {/* Quick stats */}
+            <div className="flex gap-6 mt-8 pt-8 border-t border-border">
+              {[
+                { value: "1.500kg", label: "Carga Útil" },
+                { value: "12,6 km/L", label: "Consumo Cidade" },
+                { value: "CNH B", label: "Habilitação" },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <div className="font-display text-lg sm:text-xl font-extrabold text-primary">{stat.value}</div>
+                  <div className="text-xs text-muted-foreground">{stat.label}</div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative"
+          >
+            <img
+              src="https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png"
+              alt="Shineray T30 — Vista frontal"
+              className="w-full max-w-lg mx-auto lg:max-w-none"
+            />
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      <motion.a
+        href="#pilares"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        transition={{ delay: 1 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-muted-foreground/50 hover:text-primary transition-colors"
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2"
-        >
-          <span className="text-xs text-white/40 uppercase tracking-widest">Scroll</span>
-          <ArrowDown size={16} className="text-white/30" />
+        <motion.div animate={{ y: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
+          <ChevronDown size={20} />
         </motion.div>
-      </motion.div>
+      </motion.a>
     </section>
   );
 };

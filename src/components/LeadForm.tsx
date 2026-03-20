@@ -6,7 +6,7 @@ const whatsappUrl =
 
 const LeadForm = () => {
   return (
-    <section id="contato" className="py-24 sm:py-32 relative section-divider">
+    <section id="contato" className="py-12 sm:py-16 relative section-divider">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center">
