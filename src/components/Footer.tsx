@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       {/* Info */}
-      <div className="py-12">
+      <div className="section-light-grid section-rich py-12">
         <div className="container mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
