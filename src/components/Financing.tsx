@@ -57,7 +57,7 @@ function AnimatedPrice() {
 
 const Financing = () => {
   return (
-    <section id="financiamento" className="py-24 sm:py-32 relative section-divider">
+    <section id="financiamento" className="py-12 sm:py-16 relative section-divider">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div

@@ -62,7 +62,7 @@ const specGroups = [
 
 const TechSpecs = () => {
   return (
-    <section id="ficha-tecnica" className="py-16 sm:py-24 relative section-divider">
+    <section id="ficha-tecnica" className="py-12 sm:py-16 relative section-divider">
       {/* Blueprint grid background */}
       <div className="absolute inset-0 bg-grid-pattern opacity-50" />
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-transparent to-secondary/20" />
