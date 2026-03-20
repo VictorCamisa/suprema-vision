@@ -47,7 +47,7 @@ function CounterStat({ target, suffix, isDecimal }: { target: number; suffix: st
 
 const SocialProof = () => {
   return (
-    <section className="py-14 sm:py-20 section-navy">
+    <section className="py-14 sm:py-20 section-navy-spotlight section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

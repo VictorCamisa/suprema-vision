@@ -114,7 +114,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-border py-4">
+      <div className="section-light-diagonal section-rich border-t border-border py-4">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <span>© {new Date().getFullYear()} Suprema Veículos — Todos os direitos reservados.</span>
           <div className="flex items-center gap-4">

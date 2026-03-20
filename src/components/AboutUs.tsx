@@ -4,7 +4,7 @@ import logoSuprema from "@/assets/logo-suprema.png";
 
 const AboutUs = () => {
   return (
-    <section className="py-14 sm:py-20">
+    <section className="py-14 sm:py-20 section-light-grid section-rich">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <motion.div
