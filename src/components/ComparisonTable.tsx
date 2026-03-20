@@ -14,18 +14,18 @@ const criteria = [
 
 const BoolCell = ({ value }: { value: boolean }) =>
   value ? (
-    <div className="w-6 h-6 rounded-full bg-primary/15 flex items-center justify-center mx-auto">
-      <Check size={14} className="text-primary" />
+    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mx-auto">
+      <Check size={14} className="text-green-600" />
     </div>
   ) : (
-    <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center mx-auto">
-      <X size={14} className="text-destructive/70" />
+    <div className="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center mx-auto">
+      <X size={14} className="text-red-400" />
     </div>
   );
 
 const ComparisonTable = () => {
   return (
-    <section id="comparativo" className="py-12 sm:py-16 section-divider">
+    <section id="comparativo" className="py-14 sm:py-20 section-light">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,102 +33,75 @@ const ComparisonTable = () => {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <span className="inline-block text-xs font-medium text-primary/70 tracking-[0.2em] uppercase mb-4">
+          <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
             Comparativo
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Compare e <span className="text-gradient-gold text-glow-gold">Comprove</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
+            Compare e <span className="text-blue-accent">Comprove</span>
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto text-base sm:text-lg">
+          <p className="text-muted-foreground max-w-md mx-auto">
             Veja como o T30 se posiciona contra os principais concorrentes.
           </p>
         </motion.div>
 
-        {/* Desktop table */}
+        {/* Desktop */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="max-w-4xl mx-auto hidden md:block"
         >
-          <div className="glass-card rounded-xl overflow-hidden">
+          <div className="bg-white rounded-xl border border-border overflow-hidden shadow-sm">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-border/50">
-                  <th className="text-left py-5 px-6 text-sm font-medium text-muted-foreground">
-                    Critério
-                  </th>
-                  <th className="py-5 px-6 text-center relative">
-                    <div className="glass-card-gold rounded-xl py-3 px-5 inline-flex items-center gap-2">
-                      <Crown size={16} className="text-primary" />
-                      <span className="font-display text-lg font-bold text-gradient-gold">
-                        Shineray T30
-                      </span>
+                <tr className="border-b border-border">
+                  <th className="text-left py-4 px-5 text-sm font-medium text-muted-foreground">Critério</th>
+                  <th className="py-4 px-5 text-center">
+                    <div className="inline-flex items-center gap-2 bg-primary text-white rounded-lg py-2 px-4">
+                      <Crown size={14} />
+                      <span className="font-extrabold text-sm">Shineray T30</span>
                     </div>
                   </th>
-                  <th className="py-5 px-6 text-center">
-                    <span className="font-display text-base font-semibold text-muted-foreground">
-                      Concorrente A
-                    </span>
-                  </th>
-                  <th className="py-5 px-6 text-center">
-                    <span className="font-display text-base font-semibold text-muted-foreground">
-                      Concorrente B
-                    </span>
-                  </th>
+                  <th className="py-4 px-5 text-center text-sm font-semibold text-muted-foreground">Concorrente A</th>
+                  <th className="py-4 px-5 text-center text-sm font-semibold text-muted-foreground">Concorrente B</th>
                 </tr>
               </thead>
               <tbody>
                 {criteria.map((row, i) => (
-                  <motion.tr
-                    key={row.label}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.05 }}
-                    className={`border-b border-border/30 transition-colors hover:bg-primary/[0.02] ${
-                      i % 2 === 0 ? "bg-card/30" : ""
-                    }`}
-                  >
-                    <td className="py-4 px-6 text-sm font-medium">{row.label}</td>
-                    <td className="py-4 px-6 text-center">
-                      <div className={`font-semibold ${row.t30Winner ? "text-primary" : "text-foreground"}`}>
-                        {typeof row.t30 === "boolean" ? (
-                          <BoolCell value={row.t30} />
-                        ) : (
-                          <span className={row.t30Winner ? "text-gradient-gold font-bold" : ""}>
-                            {row.t30}
-                          </span>
-                        )}
-                      </div>
+                  <tr key={row.label} className={`border-b border-border/50 ${i % 2 === 0 ? "bg-secondary/30" : ""}`}>
+                    <td className="py-3.5 px-5 text-sm font-medium">{row.label}</td>
+                    <td className="py-3.5 px-5 text-center">
+                      {typeof row.t30 === "boolean" ? (
+                        <BoolCell value={row.t30} />
+                      ) : (
+                        <span className={`text-sm font-bold ${row.t30Winner ? "text-blue-accent" : ""}`}>{row.t30}</span>
+                      )}
                     </td>
-                    <td className="py-4 px-6 text-center text-sm text-muted-foreground">
+                    <td className="py-3.5 px-5 text-center text-sm text-muted-foreground">
                       {typeof row.hr === "boolean" ? <BoolCell value={row.hr} /> : row.hr}
                     </td>
-                    <td className="py-4 px-6 text-center text-sm text-muted-foreground">
+                    <td className="py-3.5 px-5 text-center text-sm text-muted-foreground">
                       {typeof row.strada === "boolean" ? <BoolCell value={row.strada} /> : row.strada}
                     </td>
-                  </motion.tr>
+                  </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </motion.div>
 
-        {/* Mobile cards */}
-        <div className="md:hidden space-y-4 max-w-md mx-auto">
+        {/* Mobile */}
+        <div className="md:hidden space-y-3 max-w-md mx-auto">
           {criteria.map((row, i) => (
             <motion.div
               key={row.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
-              className="glass-card rounded-xl p-4"
+              transition={{ delay: i * 0.03 }}
+              className="bg-white rounded-xl border border-border p-4"
             >
-              <div className="text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider">
-                {row.label}
-              </div>
+              <div className="text-xs font-bold text-muted-foreground mb-3 uppercase tracking-wider">{row.label}</div>
               <div className="grid grid-cols-3 gap-3">
                 {[
                   { name: "T30", value: row.t30, winner: row.t30Winner },
@@ -137,19 +110,11 @@ const ComparisonTable = () => {
                 ].map((col) => (
                   <div
                     key={col.name}
-                    className={`text-center p-2 rounded-lg ${
-                      col.winner ? "glass-card-gold" : "bg-card/30"
-                    }`}
+                    className={`text-center p-2 rounded-lg ${col.winner ? "bg-primary/5 border border-primary/20" : "bg-secondary"}`}
                   >
-                    <div className="text-[10px] font-medium text-muted-foreground mb-1">
-                      {col.name}
-                    </div>
-                    <div className={`text-sm font-semibold ${col.winner ? "text-primary" : "text-foreground"}`}>
-                      {typeof col.value === "boolean" ? (
-                        <BoolCell value={col.value} />
-                      ) : (
-                        col.value
-                      )}
+                    <div className="text-[10px] font-bold text-muted-foreground mb-1">{col.name}</div>
+                    <div className={`text-sm font-bold ${col.winner ? "text-blue-accent" : "text-foreground"}`}>
+                      {typeof col.value === "boolean" ? <BoolCell value={col.value} /> : col.value}
                     </div>
                   </div>
                 ))}
