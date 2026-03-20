@@ -35,14 +35,22 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#hero" className="flex-shrink-0">
+        {/* Mobile: menu button left */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-foreground p-2"
+          aria-label="Menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Logo: centered on mobile, left on desktop */}
+        <a href="#hero" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 flex-shrink-0">
           <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-6">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
+        {/* Mobile: empty spacer right to balance */}
+        <div className="lg:hidden w-10" />
               href={item.href}
               className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
