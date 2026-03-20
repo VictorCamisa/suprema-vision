@@ -59,16 +59,18 @@ const Header = () => {
           ))}
         </nav>
 
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden lg:inline-flex btn-primary"
-        >
-          <MessageCircle size={16} />
-          Falar com Consultor
-          <ArrowUpRight size={14} />
-        </a>
+        <div className="hidden lg:flex">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            <MessageCircle size={16} />
+            Falar com Consultor
+            <ArrowUpRight size={14} />
+          </a>
+        </div>
       </div>
 
       {/* Mobile nav */}
