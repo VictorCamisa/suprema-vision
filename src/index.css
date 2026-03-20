@@ -7,22 +7,22 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 224 42% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 224 42% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 224 42% 10%;
 
     --primary: 224 56% 24%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 220 20% 97%;
+    --secondary-foreground: 224 42% 10%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 220 16% 94%;
+    --muted-foreground: 220 10% 42%;
 
     --accent: 213 94% 47%;
     --accent-foreground: 0 0% 100%;
@@ -30,8 +30,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --border: 220 16% 90%;
+    --input: 220 16% 90%;
     --ring: 224 56% 24%;
 
     --radius: 0.75rem;
@@ -42,12 +42,12 @@
     --blue-accent: 213 94% 47%;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 47% 11%;
+    --sidebar-foreground: 224 42% 10%;
     --sidebar-primary: 224 56% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 220 13% 91%;
+    --sidebar-accent: 220 20% 97%;
+    --sidebar-accent-foreground: 224 42% 10%;
+    --sidebar-border: 220 16% 90%;
     --sidebar-ring: 224 56% 24%;
   }
 }
@@ -61,11 +61,19 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
+    letter-spacing: -0.01em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   html {
@@ -73,13 +81,20 @@
   }
 
   ::selection {
-    background: hsl(var(--blue-accent) / 0.2);
+    background: hsl(var(--blue-accent) / 0.18);
     color: hsl(var(--foreground));
   }
 }
 
 @layer utilities {
   /* ─── Section Variants ─── */
+  .section-rich {
+    @apply relative isolate overflow-hidden;
+  }
+  .section-rich > * {
+    @apply relative z-10;
+  }
+
   .section-navy {
     background: hsl(var(--navy));
     color: hsl(0 0% 100%);
@@ -93,27 +108,115 @@
     background: hsl(var(--secondary));
   }
 
+  /* ─── Rich Section Backgrounds ─── */
+  .section-light-grid {
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(circle at 12% 18%, hsl(var(--blue-accent) / 0.07), transparent 32%),
+      radial-gradient(circle at 88% 82%, hsl(var(--primary) / 0.05), transparent 26%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+  }
+  .section-light-grid::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(180deg, transparent, black 10%, black 90%, transparent);
+  }
+
+  .section-light-diagonal {
+    background-color: hsl(var(--secondary));
+    background-image:
+      linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)) 42%, hsl(var(--background)) 100%);
+  }
+  .section-light-diagonal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      hsl(var(--primary) / 0.02) 0 2px,
+      transparent 2px 20px
+    );
+  }
+
+  .section-navy-mesh {
+    background-color: hsl(var(--navy));
+    color: hsl(0 0% 100%);
+    background-image:
+      radial-gradient(circle at 15% 18%, hsl(var(--blue-accent) / 0.15), transparent 28%),
+      radial-gradient(circle at 85% 80%, hsl(var(--blue-accent) / 0.08), transparent 22%),
+      linear-gradient(160deg, hsl(var(--navy-dark)), hsl(var(--navy)) 50%, hsl(var(--navy-light)));
+  }
+  .section-navy-mesh .text-muted-foreground {
+    color: hsl(0 0% 100% / 0.65);
+  }
+  .section-navy-mesh::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(hsl(0 0% 100% / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    opacity: 0.5;
+  }
+
+  .section-navy-spotlight {
+    background-color: hsl(var(--navy-dark));
+    color: hsl(0 0% 100%);
+    background-image:
+      radial-gradient(ellipse at 50% 0%, hsl(var(--blue-accent) / 0.16), transparent 50%),
+      radial-gradient(circle at 85% 20%, hsl(0 0% 100% / 0.06), transparent 20%),
+      linear-gradient(180deg, hsl(var(--navy-dark)), hsl(var(--navy)));
+  }
+  .section-navy-spotlight .text-muted-foreground {
+    color: hsl(0 0% 100% / 0.65);
+  }
+  .section-navy-spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: radial-gradient(hsl(0 0% 100% / 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: linear-gradient(180deg, transparent, black 14%, black 86%, transparent);
+    opacity: 0.4;
+  }
+
   /* ─── Buttons ─── */
   .btn-primary {
     @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-lg transition-all duration-200;
     background: hsl(var(--navy));
     color: hsl(0 0% 100%);
+    box-shadow: 0 1px 2px hsl(var(--navy) / 0.2), 0 0 0 1px hsl(var(--navy) / 0.1);
   }
   .btn-primary:hover {
     background: hsl(var(--navy-light));
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px hsl(var(--navy) / 0.3);
+    box-shadow: 0 4px 16px hsl(var(--navy) / 0.3), 0 0 0 1px hsl(var(--navy) / 0.1);
   }
 
   .btn-whatsapp {
     @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-lg transition-all duration-200;
     background: #25D366;
     color: white;
+    box-shadow: 0 1px 2px rgba(37, 211, 102, 0.3), 0 0 0 1px rgba(37, 211, 102, 0.1);
   }
   .btn-whatsapp:hover {
     background: #20BD5A;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35), 0 0 0 1px rgba(37, 211, 102, 0.1);
   }
 
   .btn-outline {
@@ -132,12 +235,18 @@
     background: hsl(var(--card));
     border-radius: var(--radius);
     border: 1px solid hsl(var(--border));
-    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.04), 0 4px 12px hsl(var(--foreground) / 0.03);
-    transition: all 0.2s ease;
+    box-shadow:
+      0 1px 2px hsl(var(--foreground) / 0.03),
+      0 4px 12px hsl(var(--foreground) / 0.04),
+      0 0 0 1px hsl(var(--foreground) / 0.02);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card-elevated:hover {
-    box-shadow: 0 4px 16px hsl(var(--foreground) / 0.08), 0 8px 24px hsl(var(--foreground) / 0.04);
-    transform: translateY(-2px);
+    box-shadow:
+      0 4px 16px hsl(var(--foreground) / 0.08),
+      0 12px 32px hsl(var(--foreground) / 0.06),
+      0 0 0 1px hsl(var(--foreground) / 0.04);
+    transform: translateY(-3px);
   }
 
   .card-navy {
@@ -225,10 +334,10 @@
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: hsl(var(--background)); }
-::-webkit-scrollbar-thumb { background: hsl(var(--navy) / 0.2); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: hsl(var(--navy) / 0.4); }
+::-webkit-scrollbar-thumb { background: hsl(var(--navy) / 0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--navy) / 0.35); }
 
 /* ─── Background patterns ─── */
 .bg-grid-pattern {
