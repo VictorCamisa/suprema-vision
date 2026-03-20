@@ -91,15 +91,6 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-whatsapp justify-center mt-2"
-              >
-                <MessageCircle size={16} />
-                Falar com Consultor
-              </a>
             </div>
           </motion.nav>
         )}
