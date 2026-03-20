@@ -1,28 +1,27 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Shield, Clock, Zap } from "lucide-react";
+import { MessageCircle, Shield, Clock, Zap, ArrowUpRight } from "lucide-react";
 
 const whatsappUrl =
   "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=contato&utm_content=cta_contato";
 
 const LeadForm = () => {
   return (
-    <section id="contato" className="py-12 sm:py-16 relative section-divider">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="contato" className="py-14 sm:py-20 section-light">
+      <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block text-xs font-medium text-primary/70 tracking-[0.2em] uppercase mb-4">
+            <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
               Contato
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Fale com um <span className="text-gradient-gold text-glow-gold">Consultor</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
+              Fale com um <span className="text-blue-accent">Consultor</span>
             </h2>
-            <p className="text-muted-foreground text-base sm:text-lg mb-10 max-w-lg mx-auto">
-              Tire suas dúvidas, simule financiamento ou agende um test drive diretamente pelo WhatsApp.
+            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+              Tire suas dúvidas, simule financiamento ou agende um test drive.
             </p>
           </motion.div>
 
@@ -30,37 +29,33 @@ const LeadForm = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="btn-magnetic inline-flex items-center gap-3 bg-[#25D366] text-white font-bold text-lg px-10 py-5 rounded-xl shadow-lg shadow-[#25D366]/30 hover:shadow-xl hover:shadow-[#25D366]/40 transition-shadow"
+            className="btn-whatsapp text-lg px-10 py-5 justify-center"
           >
-            <MessageCircle size={24} />
+            <MessageCircle size={22} />
             Falar no WhatsApp
+            <ArrowUpRight size={18} />
           </motion.a>
 
-          {/* Trust badges */}
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="flex items-center justify-center gap-8 mt-10"
+            className="flex items-center justify-center gap-6 mt-8"
           >
-            <div className="flex items-center gap-2 text-xs text-muted-foreground/60">
-              <Shield size={14} className="text-primary/40" />
-              Atendimento seguro
-            </div>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground/60">
-              <Clock size={14} className="text-primary/40" />
-              Resposta rápida
-            </div>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground/60">
-              <Zap size={14} className="text-primary/40" />
-              Sem burocracia
-            </div>
+            {[
+              { icon: Shield, text: "Atendimento seguro" },
+              { icon: Clock, text: "Resposta rápida" },
+              { icon: Zap, text: "Sem burocracia" },
+            ].map((item) => (
+              <div key={item.text} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                <item.icon size={12} className="text-primary/50" />
+                {item.text}
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>
