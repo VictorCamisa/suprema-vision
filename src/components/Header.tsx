@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, MessageCircle, ArrowUpRight } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import logoSuprema from "@/assets/logo-suprema.png";
 
 const navItems = [
@@ -19,125 +19,82 @@ const whatsappUrl =
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("#hero");
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-
-      // Detect active section
-      const sections = navItems.map((item) => item.href.slice(1));
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 120) {
-            setActiveSection(`#${sections[i]}`);
-            break;
-          }
-        }
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-black/10"
-          : "bg-white/90 backdrop-blur-md border-b border-transparent"
+          ? "bg-white shadow-md"
+          : "bg-white"
       }`}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Spacer for mobile centering */}
-        <div className="lg:hidden w-10" />
-
-        <a href="#hero" className="flex items-center justify-center flex-1 lg:flex-none">
-          <img src={logoSuprema} alt="Suprema Utilitários" className="h-14 lg:h-12" />
+        <a href="#hero" className="flex-shrink-0">
+          <img src={logoSuprema} alt="Suprema Utilitários" className="h-10" />
         </a>
 
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item, i) => (
-            <motion.a
+        <nav className="hidden lg:flex items-center gap-6">
+          {navItems.map((item) => (
+            <a
               key={item.href}
               href={item.href}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 + i * 0.05 }}
-              className={`relative text-sm px-3 py-2 rounded-md transition-colors ${
-                activeSection === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
               {item.label}
-              {activeSection === item.href && (
-                <motion.div
-                  layoutId="activeSection"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-[2px] bg-gold-gradient rounded-full"
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                />
-              )}
-            </motion.a>
+            </a>
           ))}
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-magnetic ml-3 bg-gold-gradient text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-lg flex items-center gap-2"
-          >
-            <MessageCircle size={16} />
-            Falar com Consultor
-          </a>
         </nav>
 
-        {/* Mobile toggle */}
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:inline-flex btn-primary"
+        >
+          <MessageCircle size={16} />
+          Falar com Consultor
+          <ArrowUpRight size={14} />
+        </a>
+
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-foreground p-2 hover:text-primary transition-colors"
+          className="lg:hidden text-foreground p-2"
           aria-label="Menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile nav */}
       <AnimatePresence>
         {isOpen && (
           <motion.nav
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden"
+            className="lg:hidden bg-white border-t border-border overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-1">
-              {navItems.map((item, i) => (
-                <motion.a
+              {navItems.map((item) => (
+                <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  className={`text-sm py-3 px-3 rounded-md transition-colors ${
-                    activeSection === item.href
-                      ? "text-primary bg-primary/5"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
-                  }`}
+                  className="text-sm font-medium py-2.5 px-3 rounded-lg text-foreground/70 hover:text-primary hover:bg-secondary transition-colors"
                 >
                   {item.label}
-                </motion.a>
+                </a>
               ))}
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold-gradient text-primary-foreground font-semibold text-sm px-5 py-3 rounded-lg text-center mt-2 flex items-center justify-center gap-2"
+                className="btn-whatsapp justify-center mt-2"
               >
                 <MessageCircle size={16} />
                 Falar com Consultor
