@@ -7,9 +7,51 @@ const whatsappUrl =
 const HeroSection = () => {
   return (
     <section id="hero" className="relative pt-16 overflow-hidden">
-      {/* Navy background */}
-      <div className="section-navy">
-        <div className="container mx-auto px-4 py-16 lg:py-20">
+      {/* Navy background with dynamic elements */}
+      <div className="section-navy relative">
+        {/* Animated gradient orbs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <motion.div
+            className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-[0.08]"
+            style={{ background: "radial-gradient(circle, hsl(213 94% 47%), transparent 70%)" }}
+            animate={{ scale: [1, 1.2, 1], x: [0, 30, 0], y: [0, -20, 0] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full opacity-[0.06]"
+            style={{ background: "radial-gradient(circle, hsl(213 94% 60%), transparent 70%)" }}
+            animate={{ scale: [1.1, 1, 1.1], x: [0, -20, 0], y: [0, 30, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full opacity-[0.04]"
+            style={{ background: "radial-gradient(circle, hsl(0 0% 100%), transparent 70%)" }}
+            animate={{ scale: [1, 1.3, 1] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+
+        {/* Grid pattern overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+
+        {/* Diagonal light streak */}
+        <motion.div
+          className="absolute inset-0 pointer-events-none opacity-[0.03]"
+          style={{
+            background: "linear-gradient(135deg, transparent 30%, hsl(213 94% 47%) 50%, transparent 70%)",
+          }}
+          animate={{ opacity: [0.03, 0.06, 0.03] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        />
+
+        <div className="container mx-auto px-4 py-16 lg:py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Text */}
             <motion.div
@@ -17,8 +59,8 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6">
-                <div className="w-2 h-2 rounded-full bg-[#25D366]" />
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 border border-white/5">
+                <div className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
                 <span className="text-xs font-semibold text-white/80 tracking-wide uppercase">
                   Concessionária Autorizada Shineray
                 </span>
@@ -45,7 +87,7 @@ const HeroSection = () => {
                 </a>
                 <a
                   href="tel:+556133638060"
-                  className="inline-flex items-center gap-2 font-bold text-sm px-8 py-4 rounded-lg border-2 border-white/20 text-white hover:bg-white/10 transition-all justify-center"
+                  className="inline-flex items-center gap-2 font-bold text-sm px-8 py-4 rounded-lg border-2 border-white/20 text-white hover:bg-white/10 transition-all justify-center backdrop-blur-sm"
                 >
                   <Phone size={18} />
                   Ligar Agora
@@ -58,11 +100,17 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
             >
+              {/* Glow behind vehicle */}
+              <div
+                className="absolute inset-0 blur-3xl opacity-20 scale-90"
+                style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
+              />
               <img
                 src="https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png"
                 alt="Shineray T30 — Vista frontal"
-                className="w-full max-w-xl mx-auto"
+                className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
               />
             </motion.div>
           </div>
