@@ -25,7 +25,7 @@ const BoolCell = ({ value }: { value: boolean }) =>
 
 const ComparisonTable = () => {
   return (
-    <section id="comparativo" className="py-14 sm:py-20 section-light">
+    <section id="comparativo" className="py-14 sm:py-20 section-light-diagonal section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

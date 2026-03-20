@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border">
       {/* CTA */}
-      <div className="section-navy py-16 text-center">
+      <div className="section-navy-mesh section-rich py-16 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white">
             Pronto para conhecer o T30?
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       {/* Info */}
-      <div className="py-12">
+      <div className="section-light-grid section-rich py-12">
         <div className="container mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
@@ -114,7 +114,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-border py-4">
+      <div className="section-light-diagonal section-rich border-t border-border py-4">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <span>© {new Date().getFullYear()} Suprema Veículos — Todos os direitos reservados.</span>
           <div className="flex items-center gap-4">
