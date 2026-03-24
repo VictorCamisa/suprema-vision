@@ -19,7 +19,7 @@ const AboutUs = () => {
               Quem é a <span className="text-blue-accent">Suprema</span>?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Fundada em 1994, a Suprema Veículos é parte do Grupo Suprema — um conglomerado com mais de 30 anos no mercado automotivo de Brasília. Somos concessionária autorizada Shineray no DF.
+              Desde 1994, a Suprema é referência no mercado automotivo de Brasília. Concessionária autorizada Shineray no DF.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -30,7 +30,7 @@ const AboutUs = () => {
               ].map((item) => (
                 <div key={item.label} className="card-elevated px-4 py-3 flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                    <item.icon size={14} className="text-white" />
+                    <item.icon size={14} className="text-primary-foreground" />
                   </div>
                   <div>
                     <span className="text-[10px] text-muted-foreground block uppercase tracking-wider font-bold">{item.label}</span>
@@ -53,7 +53,7 @@ const AboutUs = () => {
                 alt="Concessionária Suprema Utilitários Brasília"
                 className="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute bottom-4 left-4 bg-white rounded-xl px-4 py-3 shadow-lg">
+              <div className="absolute bottom-4 left-4 bg-card rounded-xl px-4 py-3 shadow-lg">
                 <img src={logoSuprema} alt="Suprema" className="h-8" />
               </div>
             </div>

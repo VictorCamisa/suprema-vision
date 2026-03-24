@@ -39,9 +39,6 @@ const ComparisonTable = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
             Compare e <span className="text-blue-accent">Comprove</span>
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto">
-            Veja como o T30 se posiciona contra os principais concorrentes.
-          </p>
         </motion.div>
 
         {/* Desktop */}
@@ -51,13 +48,13 @@ const ComparisonTable = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto hidden md:block"
         >
-          <div className="bg-white rounded-xl border border-border overflow-hidden shadow-sm">
+          <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left py-4 px-5 text-sm font-medium text-muted-foreground">Critério</th>
                   <th className="py-4 px-5 text-center">
-                    <div className="inline-flex items-center gap-2 bg-primary text-white rounded-lg py-2 px-4">
+                    <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-lg py-2 px-4">
                       <Crown size={14} />
                       <span className="font-extrabold text-sm">Shineray T30</span>
                     </div>
@@ -99,7 +96,7 @@ const ComparisonTable = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.03 }}
-              className="bg-white rounded-xl border border-border p-4"
+              className="bg-card rounded-xl border border-border p-4"
             >
               <div className="text-xs font-bold text-muted-foreground mb-3 uppercase tracking-wider">{row.label}</div>
               <div className="grid grid-cols-3 gap-3">
