@@ -61,9 +61,6 @@ const SocialProof = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 text-white">
             Tradição e Confiança
           </h2>
-          <p className="text-white/60 max-w-md mx-auto">
-            A Suprema Veículos é referência no mercado automotivo de Brasília desde 1994.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">

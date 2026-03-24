@@ -34,7 +34,7 @@ const Gallery = () => {
             className="text-center mb-10"
           >
             <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
-              Conheça
+              Conheça de perto
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
               <span className="text-blue-accent">Galeria</span>
@@ -44,7 +44,7 @@ const Gallery = () => {
           <div className="max-w-4xl mx-auto space-y-5">
             {/* Carousel */}
             <div
-              className="relative bg-white rounded-xl border border-border overflow-hidden aspect-video flex items-center justify-center group cursor-pointer"
+              className="relative bg-card rounded-xl border border-border overflow-hidden aspect-video flex items-center justify-center group cursor-pointer"
               onClick={() => setLightbox(true)}
             >
               <AnimatePresence initial={false} custom={direction} mode="wait">
@@ -64,18 +64,18 @@ const Gallery = () => {
 
               <button
                 onClick={(e) => { e.stopPropagation(); navigate(-1); }}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); navigate(1); }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
               >
                 <ChevronRight size={18} />
               </button>
 
-              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-1.5 bg-white/90 rounded-full px-3 py-1.5 shadow-sm">
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-1.5 bg-card/90 rounded-full px-3 py-1.5 shadow-sm">
                 {galleryImages.map((_, i) => (
                   <button
                     key={i}
@@ -102,7 +102,7 @@ const Gallery = () => {
             </div>
 
             {/* Video */}
-            <div className="relative aspect-video rounded-xl overflow-hidden bg-white border border-border">
+            <div className="relative aspect-video rounded-xl overflow-hidden bg-card border border-border">
               {showVideo ? (
                 <iframe
                   src="https://www.youtube.com/embed/pWkQO284Tow?autoplay=1"
@@ -115,9 +115,9 @@ const Gallery = () => {
               ) : (
                 <button onClick={() => setShowVideo(true)} className="w-full h-full flex flex-col items-center justify-center gap-3 bg-secondary/50 hover:bg-secondary transition-colors">
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                    <Play size={24} className="text-white ml-1" />
+                    <Play size={24} className="text-primary-foreground ml-1" />
                   </div>
-                  <span className="text-sm font-semibold text-muted-foreground">Assistir vídeo do T30</span>
+                  <span className="text-sm font-semibold text-muted-foreground">Assistir vídeo</span>
                 </button>
               )}
             </div>

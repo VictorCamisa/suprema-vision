@@ -17,12 +17,9 @@ const LeadForm = () => {
             <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
               Contato
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6">
               Fale com um <span className="text-blue-accent">Consultor</span>
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-              Tire suas dúvidas, simule financiamento ou agende um test drive.
-            </p>
           </motion.div>
 
           <motion.a

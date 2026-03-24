@@ -5,21 +5,21 @@ const pillars = [
   {
     icon: IdCard,
     title: "CNH B",
-    description: "Dirija sem precisar de habilitação C. O T30 é classificado como veículo leve.",
+    description: "Dirija com habilitação comum. Sem precisar de CNH C.",
     highlight: "Sem CNH C",
     color: "bg-blue-accent",
   },
   {
     icon: Package,
     title: "Caçamba Inclusa",
-    description: "Carroceria de 2.940mm já incluída. Sem custo adicional. Pronto para trabalhar.",
+    description: "Carroceria de 2.940mm já inclusa. Pronto para trabalhar.",
     highlight: "2.940mm",
     color: "bg-primary",
   },
   {
     icon: TrendingDown,
     title: "Menor TCO",
-    description: "12,6 km/L na cidade + manutenção acessível = menor custo da categoria.",
+    description: "12,6 km/L na cidade + manutenção acessível.",
     highlight: "12,6 km/L",
     color: "bg-navy-light",
   },
@@ -39,11 +39,8 @@ const ValuePillars = () => {
             Diferenciais
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
-            Por que escolher o <span className="text-blue-accent">T30</span>?
+            Por que o <span className="text-blue-accent">T30</span>?
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto">
-            Três razões que fazem do Shineray T30 o utilitário mais inteligente do mercado.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
@@ -83,7 +80,7 @@ const ValuePillars = () => {
             className="btn-whatsapp text-base px-8 py-4"
           >
             <MessageCircle size={18} />
-            Tire suas Dúvidas no WhatsApp
+            Tire suas Dúvidas
             <ArrowUpRight size={16} />
           </a>
         </motion.div>

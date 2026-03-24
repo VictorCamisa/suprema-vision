@@ -6,9 +6,9 @@ const whatsappFinance =
   "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20financiamento%20do%20Shineray%20T30.&utm_source=site&utm_medium=financiamento&utm_content=cta_financiamento";
 
 const options = [
-  { icon: CreditCard, title: "Financiamento Bancário", description: "Parcelas fixas com as melhores taxas do mercado.", badge: "Mais popular" },
-  { icon: Building, title: "CNPJ / Pessoa Jurídica", description: "Condições especiais para empresas e MEIs.", badge: "Para empresas" },
-  { icon: Calculator, title: "Consórcio", description: "Parcelas mais baixas sem juros.", badge: "Sem juros" },
+  { icon: CreditCard, title: "Financiamento", description: "Parcelas fixas com as melhores taxas.", badge: "Mais popular" },
+  { icon: Building, title: "CNPJ / PJ", description: "Condições especiais para empresas.", badge: "Para empresas" },
+  { icon: Calculator, title: "Consórcio", description: "Parcelas mais baixas, sem juros.", badge: "Sem juros" },
 ];
 
 function AnimatedPrice() {
@@ -54,9 +54,6 @@ const Financing = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3">
             <span className="text-blue-accent">Financiamento</span> Facilitado
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto">
-            Entrada facilitada e parcelas que cabem no seu bolso.
-          </p>
         </motion.div>
 
         {/* Price */}
@@ -68,7 +65,7 @@ const Financing = () => {
         >
           <p className="text-sm text-muted-foreground mb-2 uppercase tracking-widest font-bold">A partir de</p>
           <AnimatedPrice />
-          <p className="text-sm text-muted-foreground italic">Consulte parcelas e carência*</p>
+          <p className="text-sm text-muted-foreground italic">Consulte parcelas*</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-10">
@@ -81,11 +78,11 @@ const Financing = () => {
               transition={{ delay: i * 0.08 }}
               className="card-elevated p-5 text-center"
             >
-              <span className="inline-block text-[10px] font-bold text-blue-accent bg-blue-accent/10 rounded-full px-3 py-1 mb-3 tracking-wider uppercase">
+              <span className="inline-block text-[10px] font-bold text-blue-accent bg-accent/10 rounded-full px-3 py-1 mb-3 tracking-wider uppercase">
                 {opt.badge}
               </span>
               <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center mx-auto mb-3">
-                <opt.icon size={20} className="text-white" />
+                <opt.icon size={20} className="text-primary-foreground" />
               </div>
               <h3 className="text-base font-extrabold mb-1">{opt.title}</h3>
               <p className="text-sm text-muted-foreground">{opt.description}</p>
