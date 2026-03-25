@@ -41,6 +41,8 @@
     --navy-dark: 224 62% 16%;
     --blue-accent: 213 94% 47%;
 
+    --warm: 30 60% 96%;
+
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 224 42% 10%;
     --sidebar-primary: 224 56% 24%;
@@ -112,9 +114,9 @@
   .section-light-grid {
     background-color: hsl(var(--background));
     background-image:
-      radial-gradient(circle at 12% 18%, hsl(var(--blue-accent) / 0.07), transparent 32%),
-      radial-gradient(circle at 88% 82%, hsl(var(--primary) / 0.05), transparent 26%),
-      linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+      radial-gradient(circle at 12% 18%, hsl(var(--blue-accent) / 0.05), transparent 32%),
+      radial-gradient(circle at 88% 82%, hsl(var(--primary) / 0.03), transparent 26%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary) / 0.5));
   }
   .section-light-grid::before {
     content: "";
@@ -123,10 +125,10 @@
     pointer-events: none;
     z-index: 0;
     background-image:
-      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
-    background-size: 48px 48px;
-    mask-image: linear-gradient(180deg, transparent, black 10%, black 90%, transparent);
+      linear-gradient(hsl(var(--primary) / 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.02) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: linear-gradient(180deg, transparent, black 15%, black 85%, transparent);
   }
 
   .section-light-diagonal {
@@ -142,17 +144,24 @@
     z-index: 0;
     background-image: repeating-linear-gradient(
       -45deg,
-      hsl(var(--primary) / 0.02) 0 2px,
-      transparent 2px 20px
+      hsl(var(--primary) / 0.015) 0 2px,
+      transparent 2px 24px
     );
+  }
+
+  .section-warm {
+    background-color: hsl(var(--warm));
+    background-image:
+      radial-gradient(circle at 20% 50%, hsl(30 50% 90% / 0.6), transparent 40%),
+      radial-gradient(circle at 80% 30%, hsl(var(--blue-accent) / 0.03), transparent 30%);
   }
 
   .section-navy-mesh {
     background-color: hsl(var(--navy));
     color: hsl(0 0% 100%);
     background-image:
-      radial-gradient(circle at 15% 18%, hsl(var(--blue-accent) / 0.15), transparent 28%),
-      radial-gradient(circle at 85% 80%, hsl(var(--blue-accent) / 0.08), transparent 22%),
+      radial-gradient(circle at 15% 18%, hsl(var(--blue-accent) / 0.12), transparent 28%),
+      radial-gradient(circle at 85% 80%, hsl(var(--blue-accent) / 0.06), transparent 22%),
       linear-gradient(160deg, hsl(var(--navy-dark)), hsl(var(--navy)) 50%, hsl(var(--navy-light)));
   }
   .section-navy-mesh .text-muted-foreground {
@@ -165,18 +174,18 @@
     pointer-events: none;
     z-index: 0;
     background-image:
-      linear-gradient(hsl(0 0% 100% / 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(0 0% 100% / 0.04) 1px, transparent 1px);
-    background-size: 56px 56px;
-    opacity: 0.5;
+      linear-gradient(hsl(0 0% 100% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.03) 1px, transparent 1px);
+    background-size: 72px 72px;
+    opacity: 0.4;
   }
 
   .section-navy-spotlight {
     background-color: hsl(var(--navy-dark));
     color: hsl(0 0% 100%);
     background-image:
-      radial-gradient(ellipse at 50% 0%, hsl(var(--blue-accent) / 0.16), transparent 50%),
-      radial-gradient(circle at 85% 20%, hsl(0 0% 100% / 0.06), transparent 20%),
+      radial-gradient(ellipse at 50% 0%, hsl(var(--blue-accent) / 0.12), transparent 50%),
+      radial-gradient(circle at 85% 20%, hsl(0 0% 100% / 0.04), transparent 20%),
       linear-gradient(180deg, hsl(var(--navy-dark)), hsl(var(--navy)));
   }
   .section-navy-spotlight .text-muted-foreground {
@@ -188,39 +197,39 @@
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background-image: radial-gradient(hsl(0 0% 100% / 0.08) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-image: radial-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
     mask-image: linear-gradient(180deg, transparent, black 14%, black 86%, transparent);
-    opacity: 0.4;
+    opacity: 0.35;
   }
 
   /* ─── Buttons ─── */
   .btn-primary {
-    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-lg transition-all duration-200;
+    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300;
     background: hsl(var(--navy));
     color: hsl(0 0% 100%);
-    box-shadow: 0 1px 2px hsl(var(--navy) / 0.2), 0 0 0 1px hsl(var(--navy) / 0.1);
+    box-shadow: 0 1px 3px hsl(var(--navy) / 0.2), 0 0 0 1px hsl(var(--navy) / 0.05);
   }
   .btn-primary:hover {
     background: hsl(var(--navy-light));
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px hsl(var(--navy) / 0.3), 0 0 0 1px hsl(var(--navy) / 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px hsl(var(--navy) / 0.3), 0 0 0 1px hsl(var(--navy) / 0.1);
   }
 
   .btn-whatsapp {
-    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-lg transition-all duration-200;
+    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300;
     background: #25D366;
     color: white;
-    box-shadow: 0 1px 2px rgba(37, 211, 102, 0.3), 0 0 0 1px rgba(37, 211, 102, 0.1);
+    box-shadow: 0 1px 3px rgba(37, 211, 102, 0.25);
   }
   .btn-whatsapp:hover {
     background: #20BD5A;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35), 0 0 0 1px rgba(37, 211, 102, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-lg transition-all duration-200;
+    @apply inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-xl transition-all duration-300;
     border: 2px solid hsl(var(--navy));
     color: hsl(var(--navy));
     background: transparent;
@@ -228,6 +237,7 @@
   .btn-outline:hover {
     background: hsl(var(--navy));
     color: white;
+    transform: translateY(-2px);
   }
 
   /* ─── Card Styles ─── */
@@ -236,17 +246,15 @@
     border-radius: var(--radius);
     border: 1px solid hsl(var(--border));
     box-shadow:
-      0 1px 2px hsl(var(--foreground) / 0.03),
-      0 4px 12px hsl(var(--foreground) / 0.04),
-      0 0 0 1px hsl(var(--foreground) / 0.02);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      0 1px 2px hsl(var(--foreground) / 0.02),
+      0 4px 16px hsl(var(--foreground) / 0.04);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card-elevated:hover {
     box-shadow:
-      0 4px 16px hsl(var(--foreground) / 0.08),
-      0 12px 32px hsl(var(--foreground) / 0.06),
-      0 0 0 1px hsl(var(--foreground) / 0.04);
-    transform: translateY(-3px);
+      0 4px 16px hsl(var(--foreground) / 0.06),
+      0 16px 40px hsl(var(--foreground) / 0.08);
+    transform: translateY(-4px);
   }
 
   .card-navy {
@@ -326,6 +334,38 @@
   .pulse-ring::after {
     animation-delay: 0.7s;
   }
+
+  /* ─── Lifestyle Image Overlay ─── */
+  .lifestyle-image {
+    @apply relative overflow-hidden rounded-2xl;
+  }
+  .lifestyle-image::after {
+    content: "";
+    @apply absolute inset-0;
+    background: linear-gradient(180deg, transparent 50%, hsl(var(--foreground) / 0.4) 100%);
+    pointer-events: none;
+  }
+
+  /* ─── Full-width break section ─── */
+  .section-break-image {
+    @apply relative w-full overflow-hidden;
+    height: clamp(200px, 30vw, 400px);
+  }
+  .section-break-image img {
+    @apply w-full h-full object-cover;
+  }
+  .section-break-image::after {
+    content: "";
+    @apply absolute inset-0;
+    background: linear-gradient(
+      180deg,
+      hsl(var(--background)) 0%,
+      transparent 15%,
+      transparent 85%,
+      hsl(var(--background)) 100%
+    );
+    pointer-events: none;
+  }
 }
 
 @keyframes pulse-ring {
@@ -334,15 +374,15 @@
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: hsl(var(--background)); }
-::-webkit-scrollbar-thumb { background: hsl(var(--navy) / 0.15); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: hsl(var(--navy) / 0.35); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--navy) / 0.12); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--navy) / 0.3); }
 
 /* ─── Background patterns ─── */
 .bg-grid-pattern {
   background-image:
-    linear-gradient(hsl(var(--navy) / 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(var(--navy) / 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(hsl(var(--navy) / 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--navy) / 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
 }

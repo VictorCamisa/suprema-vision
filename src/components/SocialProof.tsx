@@ -47,13 +47,13 @@ function CounterStat({ target, suffix, isDecimal }: { target: number; suffix: st
 
 const SocialProof = () => {
   return (
-    <section className="py-14 sm:py-20 section-navy-spotlight section-rich">
+    <section className="py-16 sm:py-24 section-navy-spotlight section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-12"
         >
           <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
             Credibilidade
@@ -63,21 +63,21 @@ const SocialProof = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="bg-white/8 rounded-xl p-5 text-center border border-white/10"
+              className="bg-white/[0.06] rounded-2xl p-6 text-center border border-white/8 hover:bg-white/[0.08] transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-lg bg-blue-accent flex items-center justify-center mx-auto mb-3">
-                <stat.icon size={18} className="text-white" />
+              <div className="w-11 h-11 rounded-xl bg-blue-accent/90 flex items-center justify-center mx-auto mb-4">
+                <stat.icon size={20} className="text-white" />
               </div>
               <CounterStat target={stat.target} suffix={stat.suffix} isDecimal={stat.isDecimal} />
-              <p className="text-xs text-white/50 mt-1">{stat.label}</p>
+              <p className="text-xs text-white/45 mt-2 font-medium">{stat.label}</p>
             </motion.div>
           ))}
         </div>

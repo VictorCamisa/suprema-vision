@@ -40,13 +40,13 @@ function AnimatedPrice() {
 
 const Financing = () => {
   return (
-    <section id="financiamento" className="py-14 sm:py-20 section-light-diagonal section-rich">
+    <section id="financiamento" className="py-16 sm:py-24 section-light-diagonal section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-12"
         >
           <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
             Condições
@@ -61,14 +61,14 @@ const Financing = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-sm mx-auto text-center mb-10 card-elevated p-8"
+          className="max-w-sm mx-auto text-center mb-12 card-elevated p-10 rounded-2xl"
         >
           <p className="text-sm text-muted-foreground mb-2 uppercase tracking-widest font-bold">A partir de</p>
           <AnimatedPrice />
           <p className="text-sm text-muted-foreground italic">Consulte parcelas*</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-10">
+        <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto mb-12">
           {options.map((opt, i) => (
             <motion.div
               key={opt.title}
@@ -76,13 +76,13 @@ const Financing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="card-elevated p-5 text-center"
+              className="card-elevated p-6 text-center rounded-2xl"
             >
-              <span className="inline-block text-[10px] font-bold text-blue-accent bg-accent/10 rounded-full px-3 py-1 mb-3 tracking-wider uppercase">
+              <span className="inline-block text-[10px] font-bold text-blue-accent bg-accent/10 rounded-full px-3 py-1 mb-4 tracking-wider uppercase">
                 {opt.badge}
               </span>
-              <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center mx-auto mb-3">
-                <opt.icon size={20} className="text-primary-foreground" />
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
+                <opt.icon size={22} className="text-primary-foreground" />
               </div>
               <h3 className="text-base font-extrabold mb-1">{opt.title}</h3>
               <p className="text-sm text-muted-foreground">{opt.description}</p>
