@@ -8,7 +8,7 @@ const whatsappUrl =
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative pt-16 overflow-hidden">
+    <section id="hero" className="relative pt-20 overflow-hidden">
       {/* Hero with lifestyle background */}
       <div className="relative min-h-[85vh] flex items-center">
         {/* Background image */}
