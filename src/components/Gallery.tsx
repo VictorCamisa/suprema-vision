@@ -2,12 +2,16 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, X as XIcon, MessageCircle, ArrowUpRight } from "lucide-react";
 import lifestyleRoad from "@/assets/lifestyle-road.jpg";
+import t30Front from "@/assets/t30-front.png";
+import t30Side from "@/assets/t30-side.png";
+import t30Rear from "@/assets/t30-rear.png";
+import t30Interior from "@/assets/t30-interior.png";
 
 const galleryImages = [
-  { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png", alt: "Shineray T30 — Vista frontal" },
-  { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-3-1536x1024-1.png", alt: "Shineray T30 — Vista lateral" },
-  { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-5-1536x1024-1.png", alt: "Shineray T30 — Vista traseira" },
-  { src: "https://supremautilitarios.com/wp-content/uploads/2024/11/13-1.png", alt: "Shineray T30 — Interior" },
+  { src: t30Front, alt: "Shineray T30 — Vista frontal" },
+  { src: t30Side, alt: "Shineray T30 — Vista lateral" },
+  { src: t30Rear, alt: "Shineray T30 — Vista traseira" },
+  { src: t30Interior, alt: "Shineray T30 — Interior" },
 ];
 
 const Gallery = () => {
