@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
+import lifestyleHero from "@/assets/lifestyle-hero.jpg";
 
 const whatsappUrl =
   "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
@@ -7,74 +8,65 @@ const whatsappUrl =
 const HeroSection = () => {
   return (
     <section id="hero" className="relative pt-16 overflow-hidden">
-      {/* Navy background with dynamic elements */}
-      <div className="section-navy relative">
-        {/* Animated gradient orbs */}
+      {/* Hero with lifestyle background */}
+      <div className="relative min-h-[85vh] flex items-center">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src={lifestyleHero}
+            alt=""
+            className="w-full h-full object-cover"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(135deg, hsl(224 56% 14% / 0.92) 0%, hsl(224 56% 20% / 0.8) 50%, hsl(224 56% 24% / 0.7) 100%)",
+            }}
+          />
+        </div>
+
+        {/* Subtle animated orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-[0.08]"
             style={{ background: "radial-gradient(circle, hsl(213 94% 47%), transparent 70%)" }}
-            animate={{ scale: [1, 1.2, 1], x: [0, 30, 0], y: [0, -20, 0] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full opacity-[0.06]"
-            style={{ background: "radial-gradient(circle, hsl(213 94% 60%), transparent 70%)" }}
-            animate={{ scale: [1.1, 1, 1.1], x: [0, -20, 0], y: [0, 30, 0] }}
+            animate={{ scale: [1, 1.15, 1], x: [0, 20, 0] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full opacity-[0.04]"
-            style={{ background: "radial-gradient(circle, hsl(0 0% 100%), transparent 70%)" }}
-            animate={{ scale: [1, 1.3, 1] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full opacity-[0.05]"
+            style={{ background: "radial-gradient(circle, hsl(213 94% 60%), transparent 70%)" }}
+            animate={{ scale: [1.1, 1, 1.1] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
 
-        {/* Grid pattern overlay */}
-        <div
-          className="absolute inset-0 pointer-events-none opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-
-        {/* Diagonal light streak */}
-        <motion.div
-          className="absolute inset-0 pointer-events-none opacity-[0.03]"
-          style={{
-            background: "linear-gradient(135deg, transparent 30%, hsl(213 94% 47%) 50%, transparent 70%)",
-          }}
-          animate={{ opacity: [0.03, 0.06, 0.03] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        />
-
-        <div className="container mx-auto px-4 py-16 lg:py-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 border border-white/5">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 border border-white/5">
                 <div className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
                 <span className="text-xs font-semibold text-white/80 tracking-wide uppercase">
                   Concessionária Autorizada Shineray
                 </span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] mb-5 text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-6 text-white">
                 Shineray T30: Robustez e Eficiência para o Transporte das Suas Cargas!
               </h1>
 
-              <p className="text-white/65 text-base sm:text-lg max-w-lg mb-8 leading-relaxed">
+              <p className="text-white/60 text-lg sm:text-xl max-w-lg mb-10 leading-relaxed">
                 O Shineray T30 foi projetado para transportar cargas volumosas e pesadas com total segurança e estabilidade.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href={whatsappUrl}
                   target="_blank"
@@ -87,7 +79,7 @@ const HeroSection = () => {
                 </a>
                 <a
                   href="tel:+556133638060"
-                  className="inline-flex items-center gap-2 font-bold text-sm px-8 py-4 rounded-lg border-2 border-white/20 text-white hover:bg-white/10 transition-all justify-center backdrop-blur-sm"
+                  className="inline-flex items-center gap-2 font-bold text-sm px-8 py-4 rounded-xl border-2 border-white/15 text-white hover:bg-white/10 transition-all duration-300 justify-center backdrop-blur-sm"
                 >
                   <Phone size={18} />
                   Ligar Agora
@@ -95,16 +87,15 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* Image */}
+            {/* Vehicle image */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="relative hidden lg:block"
             >
-              {/* Glow behind vehicle */}
               <div
-                className="absolute inset-0 blur-3xl opacity-20 scale-90"
+                className="absolute inset-0 blur-3xl opacity-15 scale-90"
                 style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
               />
               <img
@@ -138,7 +129,7 @@ const HeroSection = () => {
               { value: "12,6 km/L", label: "Consumo Cidade" },
               { value: "CNH B", label: "Habilitação" },
             ].map((stat) => (
-              <div key={stat.label} className="py-5 text-center">
+              <div key={stat.label} className="py-6 text-center">
                 <div className="text-xl sm:text-2xl font-extrabold text-primary">{stat.value}</div>
                 <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
               </div>

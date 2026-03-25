@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, X as XIcon, MessageCircle, ArrowUpRight } from "lucide-react";
+import lifestyleRoad from "@/assets/lifestyle-road.jpg";
 
 const galleryImages = [
   { src: "https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png", alt: "Shineray T30 — Vista frontal" },
@@ -25,13 +26,22 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="galeria" className="py-14 sm:py-20 section-light-grid section-rich">
+      {/* Full-width lifestyle break */}
+      <div className="section-break-image">
+        <img
+          src={lifestyleRoad}
+          alt="Shineray T30 na estrada"
+          loading="lazy"
+        />
+      </div>
+
+      <section id="galeria" className="py-16 sm:py-24 section-light-grid section-rich">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-10"
+            className="text-center mb-12"
           >
             <span className="inline-block text-xs font-bold text-blue-accent tracking-[0.15em] uppercase mb-3">
               Conheça de perto
@@ -41,20 +51,20 @@ const Gallery = () => {
             </h2>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-5">
+          <div className="max-w-4xl mx-auto space-y-6">
             {/* Carousel */}
             <div
-              className="relative bg-card rounded-xl border border-border overflow-hidden aspect-video flex items-center justify-center group cursor-pointer"
+              className="relative bg-card rounded-2xl border border-border overflow-hidden aspect-video flex items-center justify-center group cursor-pointer shadow-sm"
               onClick={() => setLightbox(true)}
             >
               <AnimatePresence initial={false} custom={direction} mode="wait">
                 <motion.img
                   key={current}
                   custom={direction}
-                  initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
+                  initial={{ x: direction > 0 ? 80 : -80, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: direction < 0 ? 100 : -100, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
+                  exit={{ x: direction < 0 ? 80 : -80, opacity: 0 }}
+                  transition={{ duration: 0.35, ease: "easeOut" }}
                   src={galleryImages[current].src}
                   alt={galleryImages[current].alt}
                   className="max-h-full max-w-full object-contain absolute inset-0 m-auto"
@@ -64,13 +74,13 @@ const Gallery = () => {
 
               <button
                 onClick={(e) => { e.stopPropagation(); navigate(-1); }}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2.5 shadow-md transition-all opacity-0 group-hover:opacity-100"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); navigate(1); }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-card/90 hover:bg-card rounded-full p-2.5 shadow-md transition-all opacity-0 group-hover:opacity-100"
               >
                 <ChevronRight size={18} />
               </button>
@@ -87,12 +97,12 @@ const Gallery = () => {
             </div>
 
             {/* Thumbnails */}
-            <div className="flex gap-2 overflow-x-auto pb-1">
+            <div className="flex gap-3 overflow-x-auto pb-1">
               {galleryImages.map((img, i) => (
                 <button
                   key={i}
                   onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
-                  className={`flex-shrink-0 w-20 h-14 rounded-lg overflow-hidden transition-all ${
+                  className={`flex-shrink-0 w-24 h-16 rounded-xl overflow-hidden transition-all duration-300 ${
                     i === current ? "ring-2 ring-primary ring-offset-2 scale-105" : "opacity-50 hover:opacity-100 border border-border"
                   }`}
                 >
@@ -102,7 +112,7 @@ const Gallery = () => {
             </div>
 
             {/* Video */}
-            <div className="relative aspect-video rounded-xl overflow-hidden bg-card border border-border">
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-card border border-border shadow-sm">
               {showVideo ? (
                 <iframe
                   src="https://www.youtube.com/embed/pWkQO284Tow?autoplay=1"
@@ -114,15 +124,15 @@ const Gallery = () => {
                 />
               ) : (
                 <button onClick={() => setShowVideo(true)} className="w-full h-full flex flex-col items-center justify-center gap-3 bg-secondary/50 hover:bg-secondary transition-colors">
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                    <Play size={24} className="text-primary-foreground ml-1" />
+                  <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg">
+                    <Play size={28} className="text-primary-foreground ml-1" />
                   </div>
                   <span className="text-sm font-semibold text-muted-foreground">Assistir vídeo</span>
                 </button>
               )}
             </div>
 
-            <div className="text-center">
+            <div className="text-center pt-2">
               <a
                 href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vi%20as%20fotos%20do%20T30%20e%20gostaria%20de%20agendar%20um%20test%20drive.&utm_source=site&utm_medium=galeria&utm_content=cta_galeria"
                 target="_blank"
@@ -156,7 +166,7 @@ const Gallery = () => {
             </button>
             <motion.img
               key={current}
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               src={galleryImages[current].src}
               alt={galleryImages[current].alt}
