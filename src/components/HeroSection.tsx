@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
 import lifestyleHero from "@/assets/lifestyle-hero.jpg";
+import t30Front from "@/assets/t30-front.png";
 
 const whatsappUrl =
   "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
@@ -99,7 +100,7 @@ const HeroSection = () => {
                 style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
               />
               <img
-                src="https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png"
+                src={t30Front}
                 alt="Shineray T30 — Vista frontal"
                 className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
               />
