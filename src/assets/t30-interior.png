@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bem-vindo à Shineray Suprema Veículos.">
+        <title>Shineray Suprema Veículos</title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="https://dealersites-content.s3.amazonaws.com/modelo-shineray/logo/shineray-favicon.webp">
+                <link rel="shortcut icon" href="https://dealersites-content.s3.amazonaws.com/modelo-shineray/logo/shineray-favicon.webp">
+
+         <!-- preconnect to analytics and aws -->
+        <link rel="preconnect" href="https://s3-sa-east-1.amazonaws.com">
+        <link rel="preconnect" href="https://www.google-analytics.com">
+
+        <!-- Tags OG -->
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:url" content="https://www.supremautilitarios.com/wp-content/uploads/2024/11/13-1.png">
+        <meta property="og:title" content="Shineray Suprema Veículos">
+        <meta property="og:site_name" content="Shineray Suprema Veículos">
+        <meta property="og:description" content="Bem-vindo à Shineray Suprema Veículos.">
+        <meta property="og:image" content="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/shineray-suprema-vermelho.webp">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="300"/>
+        <meta property="og:image:height" content="300"/>
+        <meta property="og:type" content="website">
+        <meta name="author" content="Shineray Suprema Veículos">
+
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="https://www.supremautilitarios.com/wp-content/uploads/2024/11/13-1.png"/>
+        <meta name="twitter:title" content="Shineray Suprema Veículos"/>
+        <meta name="twitter:description" content="Bem-vindo à Shineray Suprema Veículos."/>
+        <meta name="twitter:image" content="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/shineray-suprema-vermelho.webp"/>
+        <!-- Tags OG -->
+
+        <link rel="preconnect" href="https://cdn.dealerspace.ai/old" crossorigin="crossorigin">
+        <link rel="preconnect" href="https://api.dealersites.com.br" crossorigin="crossorigin">
+
+        <link rel="canonical" href="https://www.supremautilitarios.com/wp-content/uploads/2024/11/13-1.png"/>
+
+        <!-- GA -->
+        
+                <!-- GA -->
+
+        <style type="text/css">body{opacity:0}</style>
+        
+
+        <link rel="stylesheet" href="/css/templates/template-01.css?id=9c772bd042f91a651fbac62745da1d2b" id="template-css">
+
+        <link rel="preload" importance="low" href="https://www.supremautilitarios.com/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?3a3398a6ef60fc64eacf45665958342e" as="font" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" importance="low" href="https://www.supremautilitarios.com/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?c500da19d776384ba69573ae6fe274e7" as="font" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" importance="low" href="https://www.supremautilitarios.com/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?cac68c831145804808381a7032fdc7c2" as="font" type="font/woff2" crossorigin="anonymous">
+
+        
+        
+                    <style>@import url(https://cdn.dealerspace.ai/production/style-1490-custom.css?v=1.12);@font-face{font-family:"Outfit Bold";src:url(https://cdn.dealerspace.ai/dealersites/fontes/outfit/Outfit-Bold.ttf);font-display:swap;font-weight:normal;font-style:normal}@font-face{font-family:"Outfit SemiBold";src:url(https://cdn.dealerspace.ai/dealersites/fontes/outfit/Outfit-SemiBold.ttf);font-display:swap;font-weight:normal;font-style:normal}@font-face{font-family:"Outfit Regular";src:url(https://cdn.dealerspace.ai/dealersites/fontes/outfit/Outfit-Regular.ttf);font-display:swap;font-weight:normal;font-style:normal}@font-face{font-family:"Outfit Light";src:url(https://cdn.dealerspace.ai/dealersites/fontes/outfit/Outfit-Light.ttf);font-display:swap;font-weight:normal;font-style:normal}@font-face{font-family:"Outfit Medium";src:url(https://cdn.dealerspace.ai/dealersites/fontes/outfit/Outfit-Medium.ttf);font-display:swap;font-weight:normal;font-style:normal}:root{--font-light:"Outfit Light";--font-semibold:"Outfit SemiBold";--font-bold:"Outfit Bold";--font-regular:"Outfit Regular";--font-medium:"Outfit Medium";--light:#fff;--info-light:#f6f3f2;--light-100:#f6f6f6;--primary:#c8080e;--primary-hover:#b90006;--secondary:#c8080e;--main-gray:#303030;--main-dark:#000;--gray-100:#4d4d50;--gray-200:#7e7f83;--gray-300:#cfd0d3;--gray-400:#ebebeb;--dark-100:#222424;--dark-gray:#595757;--bg-gray:#4d4d50;--bg-gray-light:#d9d9d9;--gray-light:#f9f9f9;--gray-card:#dfdfdf}body{color:var(--dark-100)!important;font-family: var(--font-regular) !important}a{color:var(--main-dark)}a:hover{text-decoration:none!important}.font-semi-bold{font-family: var(--font-regular), sans-serif !important}.font-bold{font-family: var(--font-bold), sans-serif !important}.font-regular{font-family: var(--font-regular), sans-serif !important}.font-size-40{font-size:2.5rem!important}.font-size-24{font-size:1.5rem!important}.text-primary{color:var(--main-dark)!important}.text-light{color:var(--light)!important}.text-dark{color:var(--main-dark)}.bg-primary{background-color:var(--primary)!important}.bg-secondary{background-color:var(--light-100)!important}.bg-light{background-color:var(--light)!important}.bg-info{background-color:var(--info-light)!important}.bg-gray-light{background-color:var(--gray-light)}.bg-black{background-color:var(--main-dark)!important}.btn{text-transform:none!important}.btn:focus{box-shadow:unset!important}#link-id,.btn-primary,#btn-cookies-privacy,#modal-collapse-shops-top,.ds-form-banner__form .btn,#btn-submit-proposal-vdp-offers{border:1px solid var(--primary)!important;border-radius:0!important;background-color:var(--primary);color:var(--light)!important;font-family: var(--font-bold) !important;font-size:1rem!important;padding:.69rem 1.2rem!important;font-weight:600!important;text-transform:none!important}#link-id:hover,.btn-primary:hover,#btn-cookies-privacy:hover,#modal-collapse-shops-top:hover,.ds-form-banner__form .btn:hover,#btn-submit-proposal-vdp-offers:hover{background-color:var(--primary-hover)!important;border:1px solid var(--primary-hover)!important;color:var(--light)!important;text-decoration:none!important}.btn-primary:active,.btn-primary:focus,.btn-secondary:focus,.btn-secondary:active{font-family: var(--font-bold) !important}.btn-secondary,#page-contact .btn-route,.section-bg-image a#link-id,#page-vdp .gallery-phones .btn-phones,#page-vdp .btn-phone,#page-vdp .btn-phone-whatsapp,.btn-proposal-comparative{background-color:var(--secondary)!important;border:1px solid var(--secondary)!important;font-size:1rem!important;font-family: var(--font-bold) !important;color:var(--light);border-radius:0!important;padding:.69rem 1.2rem!important;font-weight:600!important;text-transform:none!important}.btn-secondary:hover,#page-vdp .btn-phone:hover,#page-contact .btn-route:hover,.section-bg-image a#link-id:hover,#page-vdp .btn-phone-whatsapp:hover,#page-vdp .gallery-phones .btn-phones:hover,.btn-proposal-comparative:hover{background-color:var(--primary-hover)!important;border-color:var(--primary-hover)!important;color:var(--light)}#carousel-category-link-all,.btn-primary-outline{background-color:var(--secondary)!important;border-radius:5px!important;color:var(--main-dark)!important;font-family: var(--font-regular) !important;font-size:1rem!important;text-transform:initial!important}.selectors.navbar-offers-selector .nav-pills .nav-link.btn-primary,.buttons-breadcrumb #link-id{background-color:transparent!important;border:0!important;color:var(--main-dark)!important;font-weight:var(--font-bold)!important;font-size:1rem!important;position:relative;text-transform:initial!important;border-bottom:2px solid var(--secondary)!important;border-radius:0!important}.selectors.navbar-offers-selector .nav-pills .nav-link.btn-primary.active,.buttons-breadcrumb #link-id.active{border-bottom:solid 4px var(--primary)!important}.buttons-breadcrumb .nav-pills .nav-link{color:var(--gray-200)!important;width:fit-content!important}.buttons-breadcrumb .nav-pills .nav-link.active{color:var(--main-dark)!important}#carousel-category-link-all:hover{background-color:var(--primary)!important;color:var(--light)!important}.btn-outline-primary{padding:.69rem 1.2rem!important;text-transform:initial!important;font-weight:500!important;border:solid2px var(--primary)!important}#header-top-navbar-menu .container{padding-inline:0!important}.title-description-internal,
+.title-content:not(.title-form-contact) {color:var(--primary)!important;font-family: var(--font-bold), sans-serif !important;text-align:center!important}.subtitle-text-internal{color:#212121!important;font-size:1rem!important;font-family: var(--font-regular) !important}#page-home .card.card_form.bg-primary{background-color:#fff}.btn-form-submit,.btn-form-submit:hover{background-color:var(--light)!important;border-color:var(--light)!important;color:var(--main-dark)!important;margin-top:2rem;width:13.75rem!important}.form-control{border-radius:0}p.col-form-label-sm.p-0.mb-1,label.radio.custom-control-label{font-size:.875rem!important;padding:0!important}p.col-form-label-sm.p-0.mb-1{font-family: var(--font-bold) !important}form .radio.custom-control-label,form .custom-control-label.col-form-label-sm{font-family: var(--font-regular) !important;font-size:.875rem!important;padding-top:3px!important}form label[for*="check-declaro-que-"] a{color:var(--light);text-decoration:none!important}.col-form-title p{font-size:.875rem!important}form .custom-control-label.col-form-label-sm{font-size:.75rem!important}header nav.navbar-expand-lg{transition:.5s}.header-top .navbar-menu-desk{background-color:transparent!important;box-shadow:none!important}#dropdown-shops-top:focus{background:unset!important}#header-top-logo-website{height:28px!important;margin-top:3px}.nav-desktop .selector-button-shops button{font-family: var(--font-regular) !important;padding-inline:1rem!important}.show>.btn-primary.dropdown-toggle,.nav-desktop .selector-button-shops button:hover,.nav-desktop .selector-button-shops button:active{background-color:transparent!important;border:none!important}.nav-desktop .selector-button-shops .dropdown-item,.nav-desktop .selector-button-phones .dropdown-item{color:var(--main-dark)!important;font-family: var(--font-regular) !important;font-size:.75rem!important}.shop-phones-container #phone-Contato,.vehicle-stock-details .card-form{border:none!important}.dropdown-item.active,.dropdown-item:active{background-color:#e9ecef!important}.selector-button-shops .btn,.shop-phones-container #phone-Contato,#dropdown-phones-top{background-color:transparent;color:var(--main-dark)!important;border:none!important;padding:0!important;margin:.69rem 0!important}#c-menu-selector__nav-mob #collapse-menu-list,#c-menu-selector__nav-mob .btn-menu-collapse-opt{border-radius:0!important;width:100%!important;background-color:#fff!important}#collapse-menu-list .btn.btn-menu-collapse-opt{background:var(--light);border:none;color:var(--main-dark)}#dropdown-shops-top{border-radius:0!important;border-left:solid 2px var(--primary)!important}.c-menu-selector .dropdown-submenus .dropdown-item:before{background-color:var(--primary)!important}header .c-menu-selector .shop-phones-container i,header .c-menu-selector .shop-phones-container #dropdown-phones-top i{color:var(--primary)!important;font-size:20px}.c-menu-selector .selector-button-phones .dropdown-toggle::after,.c-menu-selector a.nav-link-menu::before,.c-menu-selector span.nav-link::before,.c-menu-selector .dropdown-submenus .dropdown-item:before,.c-menu-selector .dropdown-submenus .dropdown-item::after,.c-menu-selector .dropdown-showroom-link:hover::before,.c-menu-selector .dropdown-showroom-link::after{display:none!important}.c-menu-selector .selector-button-shops .dropdown-toggle::after{color:var(--primary)!important}.c-menu-selector__desktop{padding:0;flex:0 0 80%;max-width:80%}header .c-menu-selector .dropdown-submenus .dropdown-item{font-size:.875rem!important;color:var(--main-gray)!important;text-transform:none!important;padding:.5rem 0!important}header .c-menu-selector .dropdown-submenus .dropdown-item:hover,.c-menu-selector a.nav-link-menu:hover,.c-menu-selector .dropdown-showroom-link:hover{color:var(--primary)!important}.c-menu-selector #dropdown-showroom,.c-menu-selector .dropdown-submenus{background-color:var(--light)!important;top:2.3rem!important;border:none;padding-top:2.5rem!important}.c-menu-selector .dropdown-submenus{width:17.188rem!important}.header-top .navbar-menu-desk span,.header-top .navbar-menu-desk a{color:var(--main-gray)!important;font-weight:700;text-transform:uppercase;padding:.5rem .5rem!important}.btn-collapse-menu{color:var(--light)!important}header .nav-desktop{padding:1.03rem 0!important}.nav-desktop .selector-button-phone{position:relative}.nav-desktop .selector-button-phone a,.nav-desktop .selector-button-phones button{font-family: var(--font-regular) !important;padding:0 3rem 0 1rem!important}.nav-desktop .selector-button-phone a strong{margin-right:.5rem!important}input,select,::placeholder{font-size:14px!important;font-family: var(--font-regular)}.custom-checkbox .custom-control-label::before{border-radius:0!important}.custom-control-input:checked ~ .custom-control-label::before,
+.form-gallery .custom-control-input:checked ~ .custom-control-label::before {border-color:var(--light)!important;background-color:var(--primary)!important;border:solid 2px}.breadcrumb-item+.breadcrumb-item::before{color:var(--dark-100)!important}.breadcrumb-item .breadcrumb-link{font-size:.75rem!important}.buttons-breadcrumb #link-id.nav-link:hover,.buttons-breadcrumb #link-id.nav-link.active{color:var(--main-dark)!important;background-color:transparent!important;font-family: var(--font-bold) !important}.card-offer .btn-offer-carousel{width:220px;margin:auto;padding-block:6px!important;display:inline-block!important}.card-offer .btn-offer-carousel:first-letter{text-transform:capitalize}#page-home .offers-carousel .title-offers{text-transform:none!important;text-align:center!important;color:var(--primary)}#showroom-id .card-body,#dropdown-showroom-id .card-header{display:flex;flex-direction:column;align-items:flex-start}#showroom-id #tabShowroomCategories a.active{font-family: var(--font-bold) !important;border-bottom:2px solid;border-radius:0!important;padding-bottom:0!important}#showroom-id #tabShowroomCategories a{color:var(--main-dark)!important}#showroom-id #tabShowroomCategories a.btn-link-vdp{border-bottom:solid 2px var(--primary)!important}#showroom-id .card-body h3,#showroom-id .card-body p,.showroom-dropdown-title{font-family: var(--font-bold) !important}#showroom-id .card{margin-top:3.5rem}#tabShowroomCategories{margin-bottom:0!important}#page-blog-detail .card-body h3,#page-blog-detail .card-body p,.body-page-vendas-corporativas .card-content{color:var(--main-dark)!important}#side-menu-showroom .btn-link-vdp{color:var(--main-dark)!important;font-size:.6875rem!important}#side-menu-showroom .row.row-cols-4.row-cols-md-6{margin-left:0!important;margin-right:0!important}#btn-dismiss-menu span{font-size:16px!important}.body-page-home #main-body{margin-top:80px!important}#main-body{margin-top:103px!important}.section-banners .carousel-inner{max-height:calc(100vh - 81px)}.carousel-inner .btn-video-volume{top:65%!important}.section-banners .carousel-indicators li,.offers-carousel .carousel-indicators li{background-color:var(--primary)}.section-banners .carousel-indicators .active{background-color:#fff!important}.search-button{background-color:var(--secondary)!important}.carousel-control-next,.form-gallery .carousel-control-next i,.carousel-control-prev,.form-gallery .carousel-control-prev i{color:var(--main-dark)!important}#page-internal .showroom-home{padding:8px 0!important}.showroom-carousel .title-text{font-size:22px!important}.showroom-badge{text-transform:none!important}.carosel-showroom-item h3,#dropdown-showroom-id .card-header .stretched-link,.c-navbar-mob__name-vehicle{background-color:transparent!important;font-size:1rem!important;font-family: var(--font-regular) !important;text-transform:none!important}.carosel-showroom-item h3:hover,#dropdown-showroom-id .card-header .stretched-link:hover,.c-navbar-mob__name-vehicle:hover{font-family: var(--font-bold) !important}#caroselvehicleModels .carosel-showroom-item{display:flex;flex-direction:column-reverse;align-items:center}.c-showroom-carousel__card-header--image{top:-106px!important}.text-shadow-arrow{text-shadow:unset}#offers-carousel-01 .carousel-item .row.justify-content-left{padding-left:3rem!important;padding-right:3rem!important}#offers-carousel-01 .carousel-control-prev,.carousel-control-next{opacity:1!important}#offers-carousel-01 .carousel-control-prev i,#offers-carousel-01 .carousel-control-next i{color:var(--main-dark)!important}.offer-grid-category .container-search .title-offers-grid{color:var(--light)!important;font-size:18px!important;font-family: var(--font-bold) !important}#page-offer-list .offer-grid-category{position:relative}.card.card-offer{box-shadow:unset!important}.all-offers-button-row{display:none!important}.card.card-offer .card-body{box-shadow:unset!important;border:0!important;border-radius:0!important}.card.card-offer .offer-subdescription{-webkit-line-clamp:5;line-clamp:5;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden;max-height:250px!important;line-height:21px!important;line-break:after-white-space}.card-offer-header{order:2}.card-offer-header img{order:1}.card.card-offer .card-body p.font-size-16.font-weight-bold.mb-2.mt-2{font-size:.875rem!important;font-family: var(--font-regular) !important;order:3;margin-bottom:0!important;color:var(--main-gray)}.card-offer .card-body .card-content{order:4;margin-top:1rem!important}.card-offer .card-content .text-price-from{font-size:.875rem!important;color:var(--main-gray)!important;font-weight:500!important}.card-offer .text-price-to{font-size:1.375rem!important}.card-offer .offer-countdown{font-size:.75rem!important}#page-home .offers-carousel{background-color:var(--light-100)}#page-home .offers-carousel p.text-dark{color:var(--light)!important}#page-home #offers-carousel-01 .carousel-control-prev i,#page-home #offers-carousel-01 .carousel-control-next i{color:var(--primary)!important}#page-home .offers-carousel .all-offers-button-row .btn-secondary,#page-home .section-internal-description.py-4 .row.mb-5 .btn-secondary{background-color:transparent!important;border-color:var(--light)!important;color:var(--light)!important}#page-home .offers-carousel .all-offers-button-row .btn-secondary:hover,#page-home .section-internal-description.py-4 .row.mb-5 .btn-secondary:hover{background-color:var(--secondary)!important;border-color:var(--secondary)!important}#page-offer-details .offer-subdescription,#page-home .title-offers{text-align:center!important;margin-bottom:20px!important}#page-home .offers-carousel p.text-dark{text-align:center!important}#page-offer-details .offer-details-subtitle,#page-offer-details .offer-details-title{color:var(--main-dark)!important}#page-offer-list .navbar-offers-selector{background-color:var(--light)!important}p.offer-subtitle{font-size:1.125rem!important;font-family: var(--font-regular) !important;font-weight:400!important;color:var(--gray-200)!important;line-height:normal;margin-bottom:1rem!important}.card-offer .card-title{color:var(--primary)!important;font-size:1.5rem!important;font-family: var(--font-bold) !important;text-transform:uppercase!important;margin-top:.75rem}.card-subtitle.vehicle-offer-version-name{font-size:1rem!important;color:var(--main-dark)!important;margin-bottom:.875rem!important}.bg-card-offer-footer{background-color:transparent!important;border-radius:0!important}.bg-card-offer-footer i{color:var(--light)!important}.items-card-offers-footer{padding:0!important}.items-card-offers-footer>.bg-success{margin:0!important;padding:.5rem!important;background-color:var(--light-100)!important;color:var(--main-dark)!important;border-radius:0!important}.search-button{background-color:var(--main-dark)!important}.search-button i.fas.fa-search{color:#fefefe!important}.flag-available-now{border-radius:0!important}#page-home .section-services .title-content{text-align:center!important;font-size:20px!important}#page-home .section-services .card-header{margin:auto}#page-home .card-body.bg-transparent.text-center.py-2.px-0{padding:20px!important}.section-services .card-footer a{border:none!important;text-align:left;color:var(--secondary)!important}.section-services .card-footer a:hover{background-color:transparent!important}.section-services-col-content .card h3,.section-services-col-content .card .card-content{position:relative;color:var(--light)!important}.section-services .card-body .card-title{font-size:1.375rem!important}.section-services .card-body .card-content p{font-size:1rem!important}.section-services .card .card-header{border-radius:0!important;overflow:hidden}#page-home .section-services .card-body .card-title,#page-home .section-services-col-content .card-title,#page-home .section-services .card-body .card-content{color:var(--primary)!important}#page-home .section-services-col-content .card .card-title,.wrapper-card_content__title{font-family: var(--font-bold) !important;text-align:start!important}#page-home .section-internal-description .row{flex-direction:row-reverse!important}#page-home .section-internal-description .section-internal-description__content.order-lg-12{margin-top:-3rem}#page-home .title-description-internal{font-size:2.625rem!important}.wrapper-card_content__title{font-size:42px!important;margin-bottom:1rem!important}#page-home .section-services-col-content .card .card-content{text-align:start!important;font-size:14px!important}.wrapper-card_content__internal{font-size:14px!important;color:var(--main-dark)!important;margin-bottom:2rem!important}.page-item.active .page-link{background-color:var(--primary)!important;border-color:var(--primary)!important}.c-stock-card,.stock-content img,.ds-form-banner__wrapper{border-radius:0!important}.stock-content .row.pagination-top{margin-top:0!important}.vehicle-stock-details-carousel img{border-radius:0!important}.vehicle-detail-price.pricede{font-size:18px!important;font-family: var(--font-regular) !important;font-weight:500!important}.vehicle-detail-price{font-size:20px!important}.ds-form-banner__title,.ds-form-banner__form .form-row p,.ds-form-banner__form .form-row label,.ds-form-banner__form label.custom-control-label.col-form-label-sm,.ds-form-banner__form label.custom-control-label.col-form-label-sm a{color:#000!important}.ds-form-banner__form .form-control{max-height:44px!important;height:44px!important;line-height:unset!important}.ds-form-banner__form label.custom-control-label.col-form-label-sm a{font-family: var(--font-bold) !important;font-size:13px!important}.ds-form-banner__form label.custom-control-label.col-form-label-sm a:hover{text-decoration:underline!important}#page-home .section-bg-image .wrapper-card{margin-left:0!important;max-width:30.666667%}#page-home .shop-info{background-color:var(--light-100)!important;margin-top:0!important}#page-contact .btn-route i,#page-home .btn-route i,#page-contact .btn-route:hover i,#page-home .btn-route:hover i{color:var(--primary)}.title-shop-address{color:var(--main-dark)!important}#page-home .btn-route,#page-contact .btn-route{text-decoration:none!important;color:var(--main-gray)!important;background-color:transparent!important;border:solid 1px var(--primary)!important;font-size:.875rem!important;padding:.5rem 1rem!important;width:13.688rem!important;text-align:center!important;border-radius:0!important;font-family: var(--font-light) !important}#page-home .shop-info h3{color:var(--primary)!important;font-size:1rem!important;font-family: var(--font-regular) !important;margin-bottom:.5rem!important}#page-home .shop-info address{color:var(--main-dark)!important;font-size:.875rem!important;font-family: var(--font-book) !important;font-weight:300!important;margin-bottom:.5rem!important}#page-home .shop-info .phone-name{color:var(--main-gray)!important;font-family: var(--font-medium) !important;margin-bottom:.5rem!important;font-style:normal;font-weight:500!important;text-transform:none!important}#page-home .title-shop-times,#page-home .shop-info .title-phones{margin-bottom:.75rem!important;font-size:1rem!important;color:var(--main-gray)!important;font-weight:600!important;text-transform:none!important}#page-home .shop-info .shop-hours .shop-hours{color:var(--main-gray)!important}#footer-text-safe-traffic,#privacy-policy-menu a,.footer .ds-footer-section__menu .btn-toggle-content{color:var(--light-100)!important}#footer-logo-mobile-website{padding-left:15px}.ds-footer-section__secondary-logo{display:none!important}.ds-footer-section .row.py-4{justify-content:space-between}.ds-footer-section .row.py-4 .col-12.col-lg-4,.ds-footer-section__menu.col-lg-8{padding-right:0}.ds-footer-section__social{border-top: 1px solid #ffffff33 !important}#page-home .shop-info .btn-link{color:var(--main-gray)!important;font-family: var(--font-light) !important;font-size:.875rem!important}#page-home .shop-info .shop-hours{color:var(--main-dark)!important}.more-contacts a{color:var(--main-gray)!important;font-family: var(--font-regular) !important;font-weight:500!important;font-size:.875rem!important}.more-contacts a i,#page-home .shop-info .btn-link i{color:var(--primary)!important}.shop-info .shop-phones{margin-top:3rem!important;margin-bottom:1.5rem!important}#page-home .shop-info .shop-hours{margin-top:0!important}#btn-collapse-shop-info{box-shadow:unset!important}#page-home .shop-info .info-shops-selector .nav-pills .nav-link{background-color:var(--light)!important;border:1px solid var(--primary)!important;border-radius:0!important;color:var(--primary)!important}#page-home .shop-info .info-shops-selector .nav-pills .nav-link.active,#collapseShopInfo .btn-primary.active{color:#fff!important;background-color:var(--primary)!important;text-align:center!important;font-family: var(--font-bold) !important}.ds-footer-section .ds-footer-section__menu>.row{justify-content:end!important}#form-lead-proposal-vdp .card-form{border:0!important;background-color:var(--primary)}.vehicle-version-comparative a.active p{color:var(--main-dark)!important;background-color:transparent!important;font-family: var(--font-bold) !important}.vehicle-version-comparative a p{color:var(--dark-gray)!important;background-color:transparent!important;font-family: var(--font-regular) !important}.nav-desktop .selector-button-shops .dropdown-item:hover,.nav-desktop .selector-button-phones .dropdown-item:hover,#page-home .form .container,.custom-radio input[type="radio"]:checked+label,.vehicle-version-comparative a,#page-internal .section-services{background-color:transparent}#title-vdp-model{color:var(--main-dark)!important;font-size:1rem!important;font-family: var(--font-regular) !important}#title-versions-comparative{color:var(--main-dark)!important;font-family: var(--font-regular) !important;font-size:1.5rem!important}.vdp-form-subtitle{color:#fff!important;font-size:14px!important;font-family: var(--font-regular) !important}.version-features-text{color:var(--gray-100)}.vehicle-version-comparative-content .fas.fa-circle::before{content:"\f00c"!important;font-size:1rem}.version-features-title{color:var(--dark-100)!important;font-size:1.125rem!important}.btn-modal-items-serie{color:var(--dark-100)!important;font-weight:600}.btn-modal-items-serie i{color:var(--primary)!important}#page-vdp .btn-proposal button{margin:0!important}#page-vdp .btn-proposal .btn-proposal-comparative{display:flex;align-items:center;margin-right:10px!important;text-transform:none!important;width:13.75rem;justify-content:center}.ds-link-compare-version-from-vdp__link{border-color:var(--primary)!important;background-color:transparent!important;color:var(--primary)!important;width:13.75rem}.ds-link-compare-version-from-vdp__link:hover{color:var(--light)!important}.color-choose input[type="radio"]+label span{border-radius:50%!important}#page-vdp .vehicle-model-characteristics{background-color:var(--gray-400)!important}#page-vdp .carousel-model-gallery-thumbs .carousel-control-next i,#page-vdp .carousel-model-gallery-thumbs .carousel-control-prev i{color:var(--primary)!important}#page-vdp .carousel-model-gallery-thumbs .carousel-indicators li{background-color:var(--gray-100)!important}#page-vdp .carousel-model-gallery-thumbs .carousel-indicators li.active{background-color:var(--primary)!important}.btn-proposal{text-align:left!important}.color-chooser-container div{justify-content:flex-start!important}.btn.btn-datasheet{color:var(--gray-100)!important;font-family: var(--font-regular) !important;font-size:.875rem!important}.btn.btn-datasheet i{color:var(--bg-gray)}.btn.btn-datasheet i::before{content:"\+"!important}.vehicle-version-comparative{padding-bottom:3rem!important}#page-vdp .phone-name{display:flex;justify-content:center}.vehicle-version-comparative-content .ds-link-compare-version-from-vdp__link,.btn-proposal .btn-proposal-comparative{height:50px;text-transform:none}#tabVehicleModelContent .nav-link.active{border:2px solid var(--primary)!important;color:var(--light)!important;font-family: var(--font-bold) !important;background-color:var(--primary)!important}#tabVehicleModelContent .nav-link{border-radius:0!important;border:2px solid var(--main-gray)!important;color:var(--main-gray)!important;font-size:1rem!important;font-family: var(--font-regular);padding:15px!important;font-weight:400!important}#tabVehicleModelContent .characteristic-title{color:var(--main-gray)!important;font-size:1.625rem!important;font-family: var(--font-bold) !important;margin-bottom:2rem!important;position:relative;text-transform:none!important}#tabVehicleModelContent .characteristic-text{color:var(--main-gray)!important}#page-vdp .vehicle-model-characteristics .carousel-indicators{margin-bottom:0!important}#description-model-vdp{margin-top:3rem;position:relative}#page-vdp .form-gallery > .container > .row:nth-child(2) {flex-direction:row-reverse}#description-model-vdp-subtitle{font-size:22px!important;font-family: var(--font-regular) !important;color:var(--light)!important;display:none}@media (max-width:992px){#form-lead-proposal-vdp .card-form{width:92%;margin:auto}#dropdown-menu-phone,.btn-menu-mobile{color:var(--primary)!important}}#btn-vdp-test-drive-top{width:inherit}.img-content-item-carousel-vdp img{width:100%}.body-page-novos .btn-link-vdp h3{color:var(--dark-200)!important;font-size:1rem!important;font-family: var(--font-regular) !important}#description-model-vdp-info,p.model-name-versions-text.font-size-20.text-dark.text-uppercase.mb-0{font-size:16px!important;font-family: var(--font-regular) !important;text-transform:initial!important}.version-features-title{text-transform:uppercase!important}#page-vdp .vehicle-model-characteristics .row{flex-direction:row-reverse}#page-vdp .carousel-inner .characteristic-text{color:var(--main-gray)!important;font-size:1rem!important;font-family: var(--font-regular) !important}#vehicle-versions-container .card-body.card-body-features{max-height:389px!important;padding:1rem 0!important}.car-name-fixed-title{font-size:1rem!important}.body-page-novos div[class*="showroom-col-model"]{padding:1.5rem 2.2rem!important}#page-offer-details .offer-details-form-title{color:var(--main-dark);font-size:1.25rem!important;font-family: var(--font-bold), sans-serif !important;margin-bottom:1.2rem!important;text-align:left!important}#page-offer-details .offer-details-form-subtitle{color:var(--gray-150);font-size:1rem!important;font-family: var(--font-regular) !important;text-align:left!important;margin-bottom:1.5rem!important}#page-offer-details .card-form.bg-gray{border:0!important;border-radius:0!important;max-width:350px!important}.offer-grid-category{background-color:var(--light-100)!important}#page-offer-details .offer-countdown{color:var(--light)!important}#page-offer-details .text-from-price{font-weight:500;color:#595757!important}#page-offer-details .text-to-price{font-size:1.875rem!important;color:var(--main-dark)!important}.nav-pills .nav-link.active,.nav-pills .show>.nav-link{background-color:transparent!important;color:var(--main-dark)!important}#page-internal .card.card-offer .card-body .flag-launch.bg-secondary.parallelogram{margin-top:8px}.section-banners .video-slider{height:701px!important;padding:0!important}#page-contact .shop-info{margin-top:0!important;background-color:var(--light-100)!important}#page-contact .shop-info h3{color:var(--main-dark)!important;font-size:1.25rem!important;font-family: var(--font-regular) !important;margin-bottom:.5rem!important}#page-contact .shop-info address{color:var(--main-dark)!important;font-size:1rem!important;font-family: var(--font-book) !important;margin-bottom:.5rem!important}#page-contact .title-shop-times,#page-contact .shop-info .title-phones{color:var(--main-dark)!important;font-size:1rem!important;font-family: var(--font-bold) !important;text-transform:inherit!important;margin-bottom:.75rem!important;font-weight:normal!important}#page-contact .shop-info .phone-name{font-size:16px!important;font-family: var(--font-regular) !important;font-weight:normal!important;color:var(--main-dark)!important;text-transform:inherit!important}#page-contact .shop-info .btn-link,#page-contact .shop-info .shop-hours{color:var(--main-dark)!important;font-size:16px!important;font-family: var(--font-book) !important;margin:0!important}#page-contact #btn-collapse-shop-info,#page-contact #collapseShopInfo .btn-primary,#page-contact .shop-info .info-shops-selector .nav-pills .nav-link{background-color:transparent!important;border-color:var(--main-dark)!important;color:var(--main-dark)!important;font-family: var(--font-regular) !important;font-size:1rem!important}#page-contact #collapseShopInfo .btn-primary.active,#page-contact .shop-info .info-shops-selector .nav-pills .nav-link.active{background-color:var(--primary)!important;border-color:var(--primary)!important;color:var(--light)!important}.section-services-laudo-cautelar h3{padding-bottom:.5rem;margin-bottom:.5rem;border-bottom:2.5px solid var(--main-dark)!important}.section-vehicle-description .title-vehicle-description,.section-vehicle-optionals .title-optionals,.section-services-laudo-cautelar h3{font-size:20px!important;color:var(--main-dark)!important}.section-vehicle-description .title-vehicle-description,.section-vehicle-optionals .title-optionals{color:var(--main-dark)!important;padding-bottom:.5rem;margin-bottom:.5rem;border-bottom:2.5px solid var(--main-dark)!important}button#btnOptinalStockVejaMais,button#btnOptinalStockVejaMenos{color:var(--main-dark)!important;background-color:transparent!important;border:none!important;box-shadow:none!important}.section-services-laudo-cautelar.py-3.mb-5.bg-transparent.position-relative{margin-bottom:0!important;padding-bottom:0!important}.filters-stock-types li .nav-link.active{background-color:var(--main-dark)!important;border-color:var(--main-dark)!important;color:var(--light)!important}.filters-stock-types li .nav-link{background-color:var(--light)!important;border:2px solid var(--main-dark)!important;color:var(--main-dark)!important}.vehicle-stock-details .card-form .card-header{order:1;background-color:var(--info-light)!important}.section-related-cars .card.position-relative.h-100,.vehicle-stock-details-carousel .carousel-inner,.vehicle-stock-details-related .image.card-img-top.img-object-fit.img-min-height.rounded.p-2.entered.loaded{border-radius:0!important}.body-page-cnpj .section-services-content,.body-page-financiamento .section-services-content,.body-page-renault-on-demand .section-services-content{margin-bottom:2px}#page-internal .section-internal-description{padding-top:44px!important}.section-internal-description.section-internal-description_block{padding-top:2.5rem!important;padding-bottom:0!important}#card-horizontal img{width:50px!important;height:auto;border-radius:0!important}#service-tab{border:none}#page-home .shop-info .btn-phone,.shop-info .shop-phones .col-md-6.px-0.mb-3,.subtitle-text-internal p:last-child{margin-bottom:1rem!important}.body-page-consorcio .section-services .card-body{align-self:center;padding:16px!important}.body-page-consorcio .card-body .card-content{color:var(--main-dark)!important}.form-group.btn-form{padding-left:15px}#page-internal .section-services-header a.active h3{color:var(--main-dark)!important;padding-bottom:0!important}#page-internal .section-services-content{background-color:var(--light-100)!important;margin-bottom:1rem}#page-internal .section-services-content p,#page-internal .section-services .card-body .card-content{color:var(--main-dark)!important}#page-internal .section-services-header a.active{border-bottom:solid 3px var(--main-dark)!important}#page-internal .section-services-header h3{color:var(--gray-200)!important}.accordion .acordion-description-btn{background-color:var(--light-100)!important;color:var(--main-dark)!important;border:none!important}.accordion .acordion-description-btn .card-body,#page-internal .section-services .card-body .card-content{color:var(--main-dark)!important}#page-internal h2.title-section.title-section{font-size:24px!important;font-family: var(--font-bold) !important;color:var(--main-dark)}.accordion .acordion-description-btn h2,.accordion .acordion-description-btn p{font-size:20px!important;font-family: var(--font-bold) !important;color:var(--main-dark)}#page-internal .buttons-breadcrumb{display:none}.buttons-breadcrumb .nav-pills .nav-link:first-child{padding-left:0}.section-internal-description__content .subtitle-text-internal{font-size:16px!important}.c-section-services__col .card-body .c-section-services__card-title{background-color:var(--light-100);border-radius:8px;font-size:16px!important;font-family: var(--font-regular) !important}.section-related-cars,#page-internal .c-ds-service-block{background-color:var(--light-100)!important}#page-internal .c-ds-service-block .c-ds-service-content{margin-bottom:32px!important}.card-form .row.justify-content-center{justify-content:flex-start!important}#page-internal .c-ds-content__title,#form-lead-proposal-vdp .card-form .vdp-form-title{text-transform:none!important;font-size:20px!important;font-family: var(--font-bold) !important;color:var(--light)!important}.section-internal-description .subtitle-internal{font-weight:600}.footer-list-grid .nav-link{padding:4px 0!important}.footer-list-grid .nav-link.font-regular{font-family: var(--font-book) !important}#footer-logo-website{height:auto;width:auto}.vehicle-stock-details-carousel .indicator-circle.active{background-color:var(--main-dark)!important;width:30px;border-radius:5px}#page-vdp .next-content p{color:var(--main-gray)!important}#page-vdp .carousel-control i.fa-solid.fa-angle-right,#page-vdp .carousel-control i.fa-solid.fa-angle-left{color:var(--main-gray)!important;border:none;padding:0}#page-vdp .carousel-indicators li{background-color:var(--main-gray)!important}#page-vdp .carousel-indicators .active{background-color:var(--primary)!important}.titulo-area-form.container{color:var(--primary)!important;font-size:2rem}.c-section-content{padding:3rem 0!important}.c-section-content__ds-title{font-weight:700}.c-section-content__ds{background:transparent;color:var(--light);box-shadow:none!important}.c-section-content__ds-cta{color:var(--light)!important;border-bottom:1px solid var(--light);width:fit-content}.c-section-content__ds-cta .c-section-content__ds-cta-icon{display:none}@media (min-width:992px){.c-section-content__ds-title{font-size:2rem!important}#vehicle-versions-container .card-body.card-body-features{min-height:auto!important}#page-vdp .vehicle-model-characteristics .carousel-indicators{left:50%!important}#page-vdp .next-content{left:auto!important;right:0!important;bottom:2rem!important}.section-internal-description_block.section-internal-description__content.title-description-internal,.section-internal-description_block.section-internal-description__content.subtitle-text-internal{color:var(--main-dark)!important}#page-internal .section-services img{height:auto;width:auto;border-radius:0;margin-bottom:8px}.title-description-internal{text-align:start!important}#tabVehicleModelContent .carousel-control{bottom:30px!important;left:50%}#description-model-vdp::before{content:"";position:absolute;width:43rem;height:6.1rem;background-color:var(--primary)!important;margin-top:-2rem}.form .needs-validation .row{justify-content:initial!important}#description-model-vdp{background-color:transparent!important}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1280px}}.shop-selector-shop-name{font-size:.75rem!important}.header-shop-selector{background-color:var(--light)}#header-top-nav-mob-btn-shop-selector{color:var(--main-dark)!important;border:none;padding:.575rem .75rem;border-radius:0!important;border-top:1px solid var(--main-gray)!important;width:90%!important;margin:auto;padding-inline:0!important}@media (max-width:425px){.top-brand-logo-website-mobile-text{font-size:14px!important}#page-offer-list{margin-top:25px}}@media (max-width:991px){.menu-list-content .card-header{border:none}.section-banners .carousel-inner{max-height:calc(100vh - 150px)}.top-brand-logo-website{display:none}#header-top-navbar-01{padding-top:2rem;padding-bottom:1.5rem;border-bottom:solid 1px var(--gray-100)}.body-page-home #main-body,#main-body{margin-top:70px!important}.body-page-modelos #main-body{margin-top:0!important}.body-page-ofertas #main-body{margin-top:155px!important}#main-body #page-offer-list .selectors ul.nav.nav-pills.justify-content-center{overflow:scroll!important;flex-wrap:nowrap;justify-content:start!important}#main-body #page-offer-list .section-banners{padding-top:0!important}.navbar-light .navbar-toggler:active,.navbar-light .navbar-toggler:focus,.navbar-light .navbar-toggler{border:0!important;box-shadow:unset!important}#c-menu-selector__nav-mob #collapse-menu-list .collapse a{color:var(--main-gray)!important;font-size:.875rem!important}#collapse-menu-list .card{border:0!important;background-color:#fff}.btn-menu-collapse-opt:hover,.btn-menu-collapse-opt:focus,.btn-menu-collapse-opt:active{background-color:var(--light-100)!important}#collapse-menu-list{background-color:var(--light)!important}#page-offer-details .offer-countdown{color:var(--light)!important}#page-vdp .vehicle-model-characteristics .carousel-indicators{margin:0 0 12.2rem!important;left:auto!important;padding-left:0!important;max-width:fit-content}.vehicle-model-characteristics .tab-content .next-content{bottom:10px!important;left:3px!important;display:none!important}#tabVehicleModelContent .carousel-control{margin-top:24px!important}.carousel-inner .btn-video-volume{top:80%!important}#accordion-menu-list .card-header .btn{text-transform:uppercase!important;color:var(--main-gray)!important}.infos-carousel .carousel.slide .col{width:50%}.form-gallery{padding:0!important}#page-home .card.card_form.bg-primary{margin-bottom:0!important}#form-lead-proposal-vdp{margin:20px 0}#page-internal .offers-grid{padding-top:0!important}#header-top-nav-mob-btn-shop-selector{background-color:transparent!important}.body-page-ofertas #page-offer-list .navbar-offers-selector{margin-top:0!important}.title-content.title-offers,#page-vdp .vehicle-model-characteristics #title-model-characteristics{font-size:1.375rem!important}#page-home .section-internal-description__image{display:none}#page-home .title-description-internal{font-size:1.75rem!important}#page-home .section-internal-description a{margin:auto;display:flex;max-width:140px;max-height:40px;align-items:center;background-color:var(--primary)!important;border-color:var(--primary)!important}.vehicle-version-comparative .card-header{padding:0}.vehicle-version-comparative .card-footer{padding-left:0}.vehicle-version-comparative .btn-proposal{flex-direction:column;gap:1rem;align-items:flex-start!important}.titulo-area-form.container{color:var(--primary)!important;font-size:1.375rem!important;text-align:center;margin-bottom:1rem}header i{color:var(--primary)!important}.section-banners .video-slider{height:230px!important}#description-model-vdp{margin-top:0!important}#page-vdp .form-gallery .col-lg-6.text-md-left{margin-bottom:10px}}@media (max-width:768px){.btn-menu-collapse-opt .fa-chevron-up{transform:scaleY(-1)}.btn-menu-collapse-opt[aria-expanded="true"] .fa-chevron-down{transform:rotate(-180deg)}.body-page-ofertas #page-offer-list .breadcrumb-nav{position:fixed!important;top:11.5%}.body-page-ofertas #page-offer-list .navbar-offers-selector{top:6%}#header-top{background:#000!important}.body-page-modelos #header-top{position:relative}.c-section-content_home.c-section-content--full{padding:1rem!important}.btn-form-submit,.btn-form-submit:hover{padding:7px!important}.body-page-consorcio .section-internal-description_consorcio .col-lg{margin-left:0!important}}@media (max-width:380px){#page-offer-list .breadcrumb-nav{top:15%!important}.body-page-ofertas #page-offer-list .navbar-offers-selector{top:15%}}@media (min-width:768px){#tabShowroomCategories{margin-bottom:0!important;width:fit-content;flex-direction:row;display:flex!important;margin:auto}}.card-header{position:relative}.card-header .btn .fas.fa-angle-down{transition:transform .3s ease}.accordion .card-header .btn[aria-expanded="true"] .fas.fa-angle-down{transform:rotate(-180deg)}#page-vdp .vehicle-model-characteristics #title-model-characteristics{font-family: var(--font-bold) !important;color:var(--main-gray)!important;text-align:center;font-weight:600!important}.vehicle-model-characteristics #tabVehicleModelContent .nav-item:last-child{padding-left:0!important}#page-vdp h2.model-name-versions-title.font-size-30.text-uppercase.font-weight-bold.text-primary.mb-2{font-size:28px!important;font-family: var(--font-bold) !important;color:var(--primary)!important}.custom-control-label.col-form-label-sm a:hover{text-decoration:underline!important}.form-group.justify-content-center.mt-3{margin-left:15px}#page-internal .section-services{padding-bottom:0!important;padding-top:0!important}#description-model-vdp-title{font-size:1.625rem!important;font-family: var(--font-bold) !important;text-transform:uppercase!important;color:var(--light)!important}#comparative-version-carousel .nav-link .nav-link-version-name{font-size:16px!important;font-family: var(--font-regular) !important;color:var(--dark-gray)!important;background-color:transparent!important}#comparative-version-carousel .nav-link.active .nav-link-version-name{color:var(--main-dark)!important}@media (min-width:768px) and (max-width:992px){#page-vdp .vehicle-model-characteristics .carousel-indicators{margin-bottom:0!important}}#showroom-id .col-12:nth-of-type(3) .justify-content-center {justify-content:start!important}@media (max-width:350px){#page-home .card-body.bg-transparent.text-center.py-2.px-0{padding:5px!important}}.shop-info .shop-info-header .title-content{font-family: var(--font-regular) !important;text-align:center!important;font-weight:600;font-size:1.75rem!important;color:var(--main-gray)!important}.swiper-slide .btn-primary{position:relative;top:-36px}.footer .ds-footer-section__menu .border-0.bg-transparent{text-transform:none;font-family: var(--font-regular) !important}.footer .ds-footer-section__menu .border-0.bg-transparent i{padding-top:0!important}#c-showroom-carousel-swiper .c-showroom-carousel__arrows.swiper-arrows{margin-top:0!important}#c-showroom-carousel-swiper h2{color:var(--main-dark);font-size:36px;font-family: var(--font-semibold);margin-bottom:3rem!important}.offer-grid-category .card-offer-header{margin-top:15px}.flag-launch.parallelogram{background-color:var(--primary)!important}.flag-launch.parallelogram span{color:var(--light)!important}.offers-carousel .card-offer,.offers-carousel .card-offer .card-body,.offer-grid-category .card-offer,.offer-grid-category .card-offer .card-body,#page-internal .offers-grid .card-offer,#page-internal .offers-grid .card-offer .card-body{background-color:var(--light)!important;padding-block:15px}#page-vdp .form-gallery .row.align-items-lg-end,#page-vdp .form-gallery .col-lg-6.col-md-6.col-12 .row.justify-content-end{justify-content:start!important}.section-services-conheca-a-drsul{background-color:var(--light-100)!important}#page-blog section.bg-primary{background-color:#f8f9fa!important}.blog-title-h1,#page-blog section.bg-primary label.p-0{color:var(--primary)!important}#c-showroom-carousel-swiper .card-model{background:linear-gradient(to top,var(--gray-card) 55%,transparent 45%);height:100%}#page-home .section-internal-description.py-4{background-color:var(--main-dark)!important;padding:5rem 0 1.5rem!important}#page-home .section-internal-description.py-4 .title-content{color:var(--light)!important;text-align:center!important}#page-home .section-internal-description.py-4 .title-description-internal,#page-home .section-internal-description.py-4 .subtitle-text-internal{color:var(--light)!important}.offer-bg-linear-top{background-color:transparent!important}.form-gallery.bg-light,#form-lead-proposal-vdp .card-form,#page-offer-details .card-form{background-color:var(--primary)}.vehicle-version-comparative-content .fas.fa-circle.text-primary,.btn-modal-items-serie .fa-plus{color:var(--secondary)!important}.btn-modal-items-serie{padding-left:0!important;padding-top:1rem}.color-chooser-container p{color:var(--gray-200)!important;font-size:.875rem}#page-home .section-internal-description.py-4 .title-content,#page-home .section-internal-description.py-4 .title-description-internal,.shop-info .shop-info-header .title-content{text-transform:none!important;text-align:left!important}#page-home .section-internal-description.py-4 .row.mb-5 .btn-secondary{width:220px}.swiper-slide{height:329px!important}.swiper-slide .btn-primary{top:-19px!important}#privacy-policy-menu a{font-family: var(--font-regular) !important}#page-offer-list .offer-grid-category::before{background-color:var(--primary);content:"";height:9rem!important;width:100%;position:absolute;margin-top:-1.6rem}.card-offer .offer-countdown,.card-offer .offer-countdown .fa-clock{background-color:var(--main-gray)!important;padding:.2rem .5rem;width:fit-content;margin:auto}@media (min-width:992px){.footer .ds-footer-section__menu .col-12>.w-100{display:flex;flex-direction:column;align-items:end}.footer .ds-footer-section__menu .col-12>.w-100 .nav-item .nav-link{text-align:end;text-transform:none!important;font-family: var(--font-regular) !important}#btn-collapse-shop-info,#page-home .shop-info .info-shops-selector .nav-pills .nav-link,#collapseShopInfo .btn-primary{padding-inline:0!important}#btn-collapse-shop-info::after,#page-home .shop-info .info-shops-selector .nav-pills .nav-link::after,#collapseShopInfo .btn-primary::after{content:"";border-bottom:2px solid transparent;width:0%;display:flex;transition:.5s ease-in-out;position:relative;top:13px}#btn-collapse-shop-info:hover::after,#page-home .shop-info .info-shops-selector .nav-pills .nav-link:hover::after,#collapseShopInfo .btn-primary:hover::after{width:100%;border-color:var(--secondary)}#page-home .shop-info .row>.col-lg-3{max-width:21%!important}#tabVehicleModelContent{gap:15px}#page-vdp .vehicle-model-characteristics .col-buttons{margin-top:3px!important}#page-vdp .vehicle-model-characteristics #title-model-characteristics{font-size:2rem!important}.c-section-content__ds{width:30%}}@media (max-width:992px){.swiper-slide{height:275px!important}#page-home .section-internal-description .container>.row{flex-direction:column-reverse}.offer-datails .container>.row{margin-inline:0!important}#c-showroom-carousel-swiper h2{font-size:24px}.shop-info .d-block .btn{border:none!important;border-radius:0!important;background-color:transparent!important;color:var(--main-gray)!important;font-family: var(--font-regular) !important}.shop-info .d-block.d-md-block{display:flex!important;justify-content:center;flex-direction:column;align-items:center}#btn-collapse-shop-info{border-bottom:1px solid var(--secondary)!important;width:50%!important;padding-inline:0!important}#btn-collapse-shop-info::after{content:"\f0dd";font-family:"Font Awesome 6 Free";padding-left:10px;font-weight:900;border:none}#tabVehicleModelContent{gap:20px}#page-home .shop-info{background:var(--light-100)!important}.shop-info .shop-info-header .title-content{font-size:1.375rem!important;margin-bottom:0!important}.ds-footer-section__menu{border-top:1px solid var(--light);padding-top:20px}#page-home #offers-carousel-01 .items-card-offers-footer .btn-offer-carousel{max-width:120px}}#js-components-offers .text-left{text-align:center!important}.shop-info .shop-phones::before{content:'Telefone';font-weight:600!important}.shop-phones .fa-phone{display:none!important}.fa-map-marked-alt:before{content:url(https://dealersites-content.s3.amazonaws.com/modelo-shineray/conteudo/map.svg)}.fa-info-circle:before{content:url(https://dealersites-content.s3.amazonaws.com/modelo-shineray/conteudo/info.svg)}.title-offers{font-size:1.75rem!important}.header-shop-selector .shop-selector-shop-name,#c-menu-selector__nav-mob span.text-underline{font-family: var(--font-regular) !important;font-weight:400}.offers-details-conditions{background-color:#fff!important}.offers-details-conditions .font-size-16.text-dark{font-size:18px!important;font-family: var(--font-bold);text-transform:uppercase}.offers-details-conditions{border-bottom:2px solid #edefe4;border-top:2px solid #edefe4}.offers-details-conditions p span{font-size:14px!important;font-family: var(--font-light);color:#40424a!important}#section-form-home .title-content{text-transform:uppercase}.version-name,.version-selector,#page-offer-list .breadcrumb-nav{display:none!important}#page-offer-list .navbar-offers-selector{margin-top:0!important;box-shadow:unset!important}#page-offer-list .section-banners{padding-top:100px!important}#page-contact .btn-route:hover .fa-map-marked-alt:before{filter:brightness(.0)}a#phone-bottom-id-16385-telefone-shop-7703-department-geral .d-flex.align-items-center::before{content:"\f095";font-family:"Font Awesome 6 Free";font-weight:900;margin-right:8px}.modal-dialog form label[for*="check-declaro-que-"] a{color:#000;text-decoration:none!important}p.col-form-label-sm.p-0.mb-1,label.radio.custom-control-label,form .radio.custom-control-label,form .custom-control-label.col-form-label-sm,.custom-control-label.col-form-label-sm a{color:var(--light)!important}.footer-safe-traffic{color:var(--light)!important}</style>
+        
+        
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">const urlApi='https://api.dealerspace.ai';const urlLeadsLoggerApi='https://api.dealerspace.ai/api/leads-logger';const _search='';</script>
+
+
+        
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" type="application/ld+json">
+            {"@context":"http://schema.org","@type":"AutomotiveBusiness","@id":null,"url":"https://www.supremautilitarios.com/wp-content/uploads/2024/11/13-1.png","name":"[site_name]","description":"Bem-vindo à [site_name].","image":["https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/shineray-suprema-vermelho.webp"],"address":{"@type":"PostalAddress","addressCountry":"Brazil","streetAddress":"TR SIA TRECHO 02 CL LOTE","postalCode":"71200-204"},"telephone":"(61) 3363-8060","sameAs":["https://www.facebook.com/people/Suprema-Utilit%C3%A1rios/61567032659114/","https://www.instagram.com/suprema_utilitarios/"],"priceRange":"Não disponível"}
+        </script>
+
+        
+                    
+<!-- Google Tag Manager -->
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T73QCDF2');</script>
+<!-- End Google Tag Manager -->
+        
+        <style>{}</style>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">(function(){var observer=new MutationObserver(function(mutations){mutations.forEach(function(mutation){mutation.addedNodes.forEach(function(node){if(node.nodeType===1&&node.nonce===undefined&&(node.tagName==='SCRIPT'||node.tagName==='LINK')){node.setAttribute('nonce','ed18gBX4gvZnxQDcTAjom5UCkSNe44s2');}});});});observer.observe(document.documentElement,{childList:true,subtree:true});})();</script>
+</head>
+
+    <body class="d-flex flex-column body-page-home">
+                
+                    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="" https: www.googletagmanager.com ns.html?id=GTM-T73QCDF2"" height="" 0"" width="" 0"" style="" display:none;visibility:hidden""></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        
+        <header id="header-top" class="header-top fixed-top bg-light" style="z-index: 1040;">
+    
+        
+
+    
+    <nav class="c-menu-selector navbar navbar-expand-lg py-2 navbar-light bg-light shadow-sm nav-desktop">
+    <div class="container">
+
+        <button class="btn-menu-mobile navbar-toggler px-1 d-flex d-lg-none flex-column justify-content-center align-items-center font-size-10 d-flex text-light line-height-12" type="button" data-toggle="collapse" data-target="#collapse-menu-list" aria-controls="collapse-menu-list" aria-expanded="false" aria-label="Menu" style="width: 50px">
+            <i class="fas fa-bars font-size-18 py-1"></i>
+        </button>
+
+        
+        <div class="c-menu-selector__logos logo-block d-flex align-items-center">
+                            <!--Site Logo (primary logo)-->
+                <a href="/" class="top-link-logo-website my-0 mr-auto d-inline-block" id="header-top-link-logo-website" aria-label="Shineray Suprema Veículos">
+        <img class="image top-logo-website  d-none d-lg-block" data-src="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/shineray-suprema-vermelho.webp" src="" alt="Shineray Suprema Veículos" title="Shineray Suprema Veículos" height="auto" id="header-top-logo-website"/>
+
+                                                    <img class="image top-logo-website d-block d-lg-none" data-src="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/mob-shineray-suprema-vermelho.webp" src="" alt="Shineray Suprema Veículos" title="Shineray Suprema Veículos" height="auto" id="header-top-logo-mobile-website"/>
+    </a>
+                <!--END Site Logo-->
+                    </div>
+
+        <div class="c-menu-selector__desktop col-lg-9 d-none d-lg-flex align-items-center justify-content-end">
+            
+            <nav class="navbar-menu-desk d-none d-md-none d-lg-block py-0 shadow-sm  navbar-light bg-light shadow-sm nav-desktop" id="header-top-navbar-menu">
+    <div class="container">
+        <ul class="nav nav-pills nav-fill mx-auto">
+                                                                                                                                                                                                <li class="nav-item dropdown">
+                                                                                                <span id="header-top-navbar-dropdown-modelos" class="nav-link nav-link-menu dropdown-toggle font-size-14 text-dark font-bold " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Modelos
+                                    </span>
+                                                                            <div id="dropdown-showroom" class="dropdown-showroom-modelos showroom dropdown-menu dropdown-menu-center dropdown-menu-top shadow">
+                                            <div class="container">
+                                                                                                <section class="showroom dropdown-showroom overflow-hidden bg-white p-4 w-100" id="dropdown-showroom-id">
+            <div class="container">
+                <div class="row justify-content-center w-100">
+
+                    
+                    
+                    
+                    <div class="col-12">
+                        <div class="row no-gutters flex-column">
+
+                            
+                            <div class="col-12 mb-3 border-bottom">
+                                                                    <ul class="nav flex-row nav-pills showroom-categories col-12 col-md-6" id="categoryTabsList" role="tablist">
+                                                                                                                                                                                    <li class="nav-item">
+                                                    <a class="nav-link active" id="tab-automoveis" data-toggle="tab" href="#content-automoveis" role="tab" aria-controls="content-automoveis" aria-selected="true">
+                                                        Automóveis
+                                                    </a>
+                                                </li>
+                                                                                                                        </ul>
+                                                            </div>
+
+                            
+                            <section class="col-12">
+                                <div class="tab-content" id="categoryContentList">
+                                                                                                                        
+                                            <div class="tab-pane fade show active" id="content-automoveis" role="tabpanel" aria-labelledby="tab-automoveis">
+
+                                                <div class="row">
+                                                                                                            
+                                                        <div class="col-12 col-sm-6 col-lg-2 mb-3">
+                                                            <div class="showroom-list-card">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h4 class="showroom-list-model text-primary mb-2 " id="model-automoveis-minitruck">Minitruck</h4>
+                                                                </div>
+
+                                                                
+                                                                                                                                    <ul class="list-unstyled showroom-vehicles-list">
+                                                                                                                                                    <li class="showroom-vehicle-line py-2">
+                                                                                <a href="https://www.supremautilitarios.com/modelos/shineray-tlux" class="showroom-vehicle-link">
+                                                                                    <span class="vehicle-name">TLUX</span>
+                                                                                </a>
+                                                                            </li>
+                                                                                                                                            </ul>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                                            </div>
+                            </section>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+
+
+<style>.title-content-showroom,.middle-content{font-size:38px;font-style:normal;font-weight:700;text-align:left!important}.dropdown-showroom .border-bottom{border-bottom:1px solid rgba(48,48,48,.1)!important}.header-top .showroom-categories .nav-link{font-size:.875rem!important;text-transform:uppercase;font-weight:700;color:var(--main-gray)!important;opacity:.7;border:none!important;text-align:start;padding-left:0!important}.showroom-categories .nav-link.active,.showroom-categories .nav-link.active:hover{color:var(--primary)!important;opacity:1;text-decoration-line:underline!important;text-decoration-thickness:2px!important}.showroom-list-title{font-size:20px;font-weight:700;margin-bottom:.75rem;color:var(--main-gray)!important}.showroom-list-card{height:100%}.showroom-list-model{font-size:.875rem;font-weight:600;margin:0;text-transform:uppercase;color:var(--primary)!important}.showroom-vehicles-list{margin:0}#dropdown-showroom-id .showroom-vehicle-link{padding:.5rem 0!important;font-weight:500!important}.showroom-vehicle-link:hover .vehicle-name{text-decoration:underline}#dropdown-showroom-id .vehicle-name{font-size:.875rem;font-weight:500;padding:0!important;color:var(--main-gray)!important}.vehicle-price{font-size:13px;font-weight:700;color:var(--primary);white-space:nowrap;margin-left:.5rem}@media (max-width:991px){.showroom-categories{gap:.5rem}.showroom-categories .nav-link{padding:.35rem .5rem}}header#header-top .c-menu-selector #dropdown-showroom,.c-menu-selector .dropdown-submenus{min-width:60rem!important;width:100%!important}</style>
+                                            </div>
+                                        </div>
+                                                                                                                        </li>
+                                                                                                                                                                                                                                                                <li class="nav-item ">
+                                                                                                <a href="https://www.supremautilitarios.com/pos-vendas" class="nav-link nav-link-menu font-size-14 text-dark font-bold" id="header-top-navbar-menu-link-55853">
+        Pós-vendas
+    </a>
+                                
+                                                    </li>
+                                                                                                            <li class="nav-item ">
+                                                                                                <a href="https://www.supremautilitarios.com/financiamento" class="nav-link nav-link-menu font-size-14 text-dark font-bold" id="header-top-navbar-menu-link-55855">
+        Financiamento
+    </a>
+                                
+                                                    </li>
+                                                                                                            <li class="nav-item dropdown">
+                            <span id="header-top-navbar-menu-link-55856" class="nav-link nav-link-menu dropdown-toggle font-size-14 text-dark font-bold " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                Institucional
+                            </span>
+                            <div class="dropdown-menu dropdown-submenus dropdown-menu-top mx-auto" aria-labelledby="header-top-navbar-menu-link-55856">
+                                                                                                            <a href="https://www.supremautilitarios.com/institucional/quem-somos" class="dropdown-item mx-auto" id="header-top-navbar-submenu-link-55857" aria-label="Quem somos">
+        Quem somos
+    </a>
+                                                                                                                                                <a href="https://www.supremautilitarios.com/institucional/fale-conosco" class="dropdown-item mx-auto" id="header-top-navbar-submenu-link-55858" aria-label="Fale conosco">
+        Fale conosco
+    </a>
+                                                                                                                                                <a href="https://www.supremautilitarios.com/institucional/trabalhe-conosco" class="dropdown-item mx-auto" id="header-top-navbar-submenu-link-55859" aria-label="Trabalhe conosco">
+        Trabalhe conosco
+    </a>
+                                                                                                                                                <a href="https://www.supremautilitarios.com/institucional/politica-de-privacidade" class="dropdown-item mx-auto" id="header-top-navbar-submenu-link-55860" aria-label="Política de privacidade">
+        Política de privacidade
+    </a>
+                                                                                                </div>
+                        </li>
+                                                        </ul>
+    </div>
+</nav>
+            
+
+            
+            <div class="c-menu-selector__phones shop-phones-container d-none d-lg-flex align-items-center">
+                
+                <div class="c-menu-selector__phones-content shop-phones-content d-none d-lg-flex align-items-center">
+                                        <style>.dropdown-menu-scroll{max-height:45vh;overflow-y:auto}</style>
+                                                                    <div class="c-menu-selector-phones__phones-content selector-button-phones dropdown ">
+        <button id="dropdown-phones-top" class="btn dropdown-toggle my-0 py-0 mx-1 btn text-light shop-selector-link py-1 shadow-none d-flex justify-content-center align-items-center font-weight-bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa-solid fa-phone mr-2"></i>
+</button>
+        <div class="dropdown-menu rounded-0 bg-black dropdown-menu-right" aria-labelledby="dropdown-phones-top">
+                                                            <a href="tel:+556133638060" class="dropdown-item  " id="drop-item-phone-top-id-16385-telefone-shop-7703" aria-label="Telefone" data-channel="phone" data-wpp="6133638060" data-talkbot="0">
+        <p class="dropdown-item-text font-size-16 text-white pb-3 mb-0"><strong>Telefone</strong> (61) 3363-8060</p>
+    </a>
+                                                            <a href="https://wa.me/6133638060" class="dropdown-item  " id="drop-item-whatsapp-top-id-16386-whatsapp-shop-7703" aria-label="Whatsapp" data-channel="whatsapp" data-wpp="6133638060" data-talkbot="1" target="_blank" rel="noopener">
+        <p class="dropdown-item-text font-size-16 text-white pb-3 mb-0"><strong>Whatsapp</strong> (61) 3363-8060</p>
+    </a>
+                    </div>
+    </div>
+                                    </div>
+            </div>
+        </div> 
+
+        <!--Button contacts mobile-->
+                    <div id="header-phone-selector" class="c-menu-selector__phones-mobile dropdown px-1 d-flex d-lg-none">
+                                    <button class="btn-contact-mobile navbar-toggler px-1 text-uppercase d-flex d-lg-none flex-column justify-content-center align-items-center font-size-10 text-light line-height-12 h-100 " type="button" id="dropdown-menu-phone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Ligar">
+                        <i class="fa-solid fa-phone font-size-18 py-1"></i>
+                    </button>
+                        <div class="dropdown-menu dropdown-menu-right rounded-0 bg-black " aria-labelledby="dropdown-menu-phone">
+                                                            <a href="tel:+556133638060" class="dropdown-item " id="header-top-link-contact-mob" aria-label="Telefone">
+        <p class="dropdown-item-text text-white mb-0 pb-3">Telefone: (61) 3363-8060</p>
+    </a>
+                                                            <a href="https://web.whatsapp.com/send?l=pt&phone=+556133638060&text=Ol%C3%A1,%20gostaria%20de%20entrar%20em%20contato" class="dropdown-item " id="header-top-link-contact-mob" aria-label="Whatsapp" target="_blank" rel="noopener">
+        <p class="dropdown-item-text text-white mb-0 pb-3">Whatsapp: (61) 3363-8060</p>
+    </a>
+                                                    </div>
+                            </div>
+                <!--END Button contacts mobile-->
+    </div>
+</nav>
+
+
+
+<div id="c-menu-selector__nav-mob" class="c-menu-selector__mobile-navbar d-xl-none d-lg-block d-md-block d-block">
+    <div class="collapse collapse-menu-list bg-dark w-88 shadow position-fixed overflow-auto" id="collapse-menu-list">
+        <div class="menu-list-content">
+            <div class="accordion" id="accordion-menu-list">
+
+                
+                    
+                                                                                
+                    
+                                    
+                    
+                                    
+                    
+                                            
+                            
+                                                            <div class="card rounded-0">
+                                    <div class="card-header p-0" id="heading-menu-modelos">
+                                        <button class="btn btn-menu-collapse-opt btn-dark btn-block shadow-none p-3 text-left rounded-0 text-uppercase font-weight-bold" type="button" data-toggle="collapse" data-target="#collapse-menu-modelos" aria-expanded="false" aria-controls="collapse-menu-modelos">
+                                            Modelos
+                                            <i class="fas fa-chevron-down font-size-12 ml-2"></i>
+                                        </button>
+                                    </div>
+
+                                    <div id="collapse-menu-modelos" class="collapse c-menu-selector__mobile-collapse py-0 bg-dark c-navbar-mob__collapse" aria-labelledby="heading-menu-modelos" data-parent="#accordion-menu-list">
+
+                                        
+                                        <div class="c-navbar-mob__previous-content">
+                                                                                    </div>
+
+                                        
+                                        <section id="navmob-vehicles-accordion" class="px-3">
+                                                                                            <div class="accordion" id="accCats">
+                                                                                                            
+                                                        <div class="card acc-card">
+                                                            <div class="card-header p-0" id="acc-cat-h-automoveis">
+                                                                <button class="btn acc-toggle acc-toggle-cat btn-dark btn-block text-left text-uppercase font-weight-bold" type="button" data-toggle="collapse" data-target="#acc-cat-automoveis" aria-expanded="true" aria-controls="acc-cat-automoveis">
+                                                                    Automóveis
+                                                                </button>
+                                                            </div>
+
+                                                            <div id="acc-cat-automoveis" class="collapse show" data-parent="#accCats">
+                                                                <div class="card-body py-2">
+                                                                    
+                                                                    <div class="accordion" id="accModels-automoveis">
+                                                                                                                                                    
+                                                                            <div class="card acc-card inner">
+                                                                                <div class="card-header p-0" id="acc-model-h-automoveis-minitruck">
+                                                                                    <button class="btn acc-toggle acc-toggle-model btn-dark btn-block text-left font-weight-bold" type="button" data-toggle="collapse" data-target="#acc-model-automoveis-minitruck" aria-expanded="false" aria-controls="acc-model-automoveis-minitruck">
+                                                                                        <span class="navmob-model-title">Minitruck</span>
+                                                                                    </button>
+                                                                                </div>
+
+                                                                                <div id="acc-model-automoveis-minitruck" class="collapse" data-parent="#accModels-automoveis">
+                                                                                    
+                                                                                                                                                                            <ul class="list-unstyled mb-2 pl-3">
+                                                                                                                                                                                            <li class="acc-vehicle-line">
+                                                                                                    <a class="navmob-vehicle-link" href="https://www.supremautilitarios.com/modelos/shineray-tlux">
+                                                                                                        <span class="vehicle-name">TLUX</span>
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                                                                                                    </ul>
+                                                                                                                                                                    </div>
+                                                                            </div>
+                                                                                                                                            </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                                                                    </section>
+                                        
+                                    </div>
+                                </div>
+
+                            
+                                                                                        
+                    
+                                    
+                    
+                                    
+                    
+                                                                                
+                    
+                                    
+                    
+                                            
+                            
+                                                            <div class="card rounded-0">
+                                    <div class="card-header p-0" id="heading-menu-pos-vendas">
+                                        <a href="https://www.supremautilitarios.com/pos-vendas" class="btn btn-menu-collapse-opt btn-dark btn-block shadow-none text-light p-3 text-left rounded-0 text-uppercase font-weight-bold">
+                                            Pós-vendas
+                                        </a>
+                                    </div>
+                                </div>
+                                                                                        
+                    
+                                            
+                            
+                                                            <div class="card rounded-0">
+                                    <div class="card-header p-0" id="heading-menu-financiamento">
+                                        <a href="https://www.supremautilitarios.com/financiamento" class="btn btn-menu-collapse-opt btn-dark btn-block shadow-none text-light p-3 text-left rounded-0 text-uppercase font-weight-bold">
+                                            Financiamento
+                                        </a>
+                                    </div>
+                                </div>
+                                                                                        
+                    
+                                                                        <div class="card rounded-0">
+                                <div class="card-header p-0" id="heading-menu-institucional">
+                                    <button class="btn btn-menu-collapse-opt btn-dark btn-block shadow-none p-3 text-left rounded-0 text-uppercase font-weight-bold" type="button" data-toggle="collapse" data-target="#collapse-menu-institucional" aria-expanded="false" aria-controls="collapse-menu-institucional">
+                                        Institucional
+                                        <i class="fas fa-chevron-down font-size-12 ml-2"></i>
+                                    </button>
+                                </div>
+
+                                <div id="collapse-menu-institucional" class="c-menu-selector__mobile-collapse collapse bg-dark" aria-labelledby="heading-menu-institucional">
+                                    <ul class="nav nav-list py-3">
+                                                                                                                                    <li class="nav-item w-100">
+                                                    <a class="nav-link text-light ml-3 text-uppercase w-90" href="https://www.supremautilitarios.com/institucional/quem-somos">
+                                                        Quem somos
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                <li class="nav-item w-100">
+                                                    <a class="nav-link text-light ml-3 text-uppercase w-90" href="https://www.supremautilitarios.com/institucional/fale-conosco">
+                                                        Fale conosco
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                <li class="nav-item w-100">
+                                                    <a class="nav-link text-light ml-3 text-uppercase w-90" href="https://www.supremautilitarios.com/institucional/trabalhe-conosco">
+                                                        Trabalhe conosco
+                                                    </a>
+                                                </li>
+                                                                                                                                                                                <li class="nav-item w-100">
+                                                    <a class="nav-link text-light ml-3 text-uppercase w-90" href="https://www.supremautilitarios.com/institucional/politica-de-privacidade">
+                                                        Política de privacidade
+                                                    </a>
+                                                </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                        
+                    
+                                                </div>
+
+            
+                    </div>
+    </div>
+
+    
+        
+</div>
+
+<style>#navmob-vehicles-accordion .acc-card{background-color:transparent;border:0}#navmob-vehicles-accordion .acc-card .card-body{background-color:transparent}#accordion-menu-list #navmob-vehicles-accordion .acc-toggle{width:100%;padding:.3rem 1rem;color:var(--main-gray)!important;font-weight:700!important;background-color:var(--light)!important;border:0;position:relative}#navmob-vehicles-accordion .acc-toggle-cat{text-transform:uppercase}#navmob-vehicles-accordion .acc-toggle-model{text-transform:none}#navmob-vehicles-accordion .acc-toggle .chev{float:right;transition:transform .2s ease}#navmob-vehicles-accordion .acc-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}#accordion-menu-list #navmob-vehicles-accordion .acc-toggle[aria-expanded="true"]{color:var(--primary)!important}#navmob-vehicles-accordion .navmob-model-title{font-size:.875rem;font-weight:700;text-transform:uppercase}#navmob-vehicles-accordion .navmob-vehicle-link{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0}#navmob-vehicles-accordion .navmob-vehicle-link .vehicle-name{font-size:.875rem}#navmob-vehicles-accordion .navmob-vehicle-link:hover .vehicle-name{text-decoration:underline}#c-menu-selector__nav-mob .c-menu-selector__mobile-collapse{background-color:var(--light)!important}</style>
+
+
+    
+</header>
+
+        <main id="main-body" class="flex-shrink-0">
+            <section class="d-flex align-items-center" style="min-height: 85vh !important;">
+  <div class="col-9 px-0 container text-center bg-white p-5 rounded-lg shadow-sm">
+    <div class="col-12">
+      <img src="https://cdn.dealerspace.ai/old/dealersites/error_icon_1.webp" alt="Erro 404: Página não encontrada" class="img-fluid" style="width: 120px;">
+    </div>
+    <h1 class="h4 font-weight-bold text-dark">Ops!</h1>
+    <h1 class="h4 font-weight-bold text-dark">
+      Não conseguimos encontrar o que você está procurando.
+    </h1>
+    <p class="mt-3 mb-4 text-muted">
+      O link que você acessou está errado, desatualizado ou não está mais disponível.
+    </p>
+    <div>
+      <a href="https://www.supremautilitarios.com" class="btn btn-lg my-1 btn-dark font-weight-bold" id="link-404-site-1714">
+        Voltar à home
+    </a>
+    </div>
+    <footer class="mt-5 text-muted">
+      Erro: 404
+    </footer>
+  </div>
+</section>
+
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" defer src="/js/errors/base.js?id=5cc17aee0f3ab082f3e2155faf8333f6" type="text/javascript"></script>
+                    </main>
+
+        <footer class="footer mt-auto bg-black" id="footer-id">
+
+	
+	<section class="ds-footer-section bg-black text-gray-dark py-4">
+    <div class="container">
+        <div class="row py-4">
+            <div class="ds-footer-section__logo mb-4 pb-3 mb-md-0 pb-md-0 col-lg-2 col-md-12 col-sm-12 d-flex flex-column align-items-start pl-0">
+                <div class="logo-footer">
+                    <img class="image footer-logo-website  d-none d-lg-block" data-src="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/whiteLogo_Suprema_Utilitarios.webp" src="" alt="Shineray Suprema Veículos" title="Shineray Suprema Veículos" height="31" width="" id="footer-logo-website"/>
+                                            <img class="image footer-logo-website d-block d-lg-none" data-src="https://dealersites-content.s3.amazonaws.com/dealersites/implementacao-onboarding/suprema/shineray/whiteLogo_Suprema_Utilitarios.webp" src="" alt="Shineray Suprema Veículos" title="Shineray Suprema Veículos" height="" width="" id="footer-logo-mobile-website"/>
+                                    </div>
+            </div>
+
+            <div class="ds-footer-section__menu col-lg-8">
+                <div class="row">
+                                            <div class="col-12 col-lg-4">
+                            <div id="footer-nav-vehicle-menu" class="w-100">
+                                <button class="border-0 bg-transparent btn-toggle-content nav-link d-flex align-items-center font-bold text-light font-size-14 px-0 px-0" data-toggle="collapse" data-target="#collapse-vehicle-menu" aria-expanded="true" aria-controls="collapse-vehicle-menu">
+                                    Modelos <i class="fa-solid fa-plus pl-2 pt-1"></i>
+                                </button>
+
+                                <div id="collapse-vehicle-menu" class="collapse " aria-labelledby="Menu Rodapé veículos" data-parent="#footer-nav-vehicle-menu">
+                                    <ul class="nav mt-2 row-cols-2 row-cols-md-1 px-0">
+                                                                                    <li class="nav-item ">
+                                                <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/modelos/shineray-tlux">
+                                                    TLUX
+                                                </a>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    <div class="col-12 col-lg-4">
+                        <div id="footer-nav-menu" class="w-100">
+                            <button class="border-0 bg-transparent btn-toggle-content mt-3 mt-md-0 nav-link d-flex align-items-center font-bold text-light font-size-14 px-0 px-0" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="true" aria-controls="collapse-menu">
+                                Mapa do site  <i class="fa-solid fa-plus pl-2 pt-1"></i>
+                            </button>
+
+                            <div id="collapse-menu" class="collapse " aria-labelledby="Menu Rodapé mapa do site" data-parent="#footer-nav-menu">
+                                <ul class="nav mt-2 row-cols-2 row-cols-md-1 px-0">
+                                                                                                                        <li class="nav-item ">
+                                                <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/compare" id="comparador-footer">
+                                                    Comparativo
+                                                </a>
+                                            </li>
+                                                                                                                                                                <li class="nav-item ">
+                                                <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/pos-vendas">
+                                                    Pós-vendas
+                                                </a>
+                                            </li>
+                                                                                                                                                                <li class="nav-item ">
+                                                <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/financiamento">
+                                                    Financiamento
+                                                </a>
+                                            </li>
+                                                                                                                                                                <li class="nav-item col-lg col-md-12 col-12 px-0 mt-3 ">
+                                                <span class="nav-link font-bold text-light font-size-14 px-0 px-0">Institucional</span>
+                                            </li>
+                                                                                            <li class="nav-item  ">
+                                                    <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/institucional/quem-somos">
+                                                        Quem somos
+                                                    </a>
+                                                </li>
+                                                                                            <li class="nav-item  ">
+                                                    <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/institucional/fale-conosco">
+                                                        Fale conosco
+                                                    </a>
+                                                </li>
+                                                                                            <li class="nav-item  ">
+                                                    <a class="nav-link text-light  font-regular text-lowercase font-size-14 px-0" href="https://www.supremautilitarios.com/institucional/trabalhe-conosco">
+                                                        Trabalhe conosco
+                                                    </a>
+                                                </li>
+                                                                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div id="footer-nav-vehicle-privacy-policy-menu" class="w-100">
+                            <div id="privacy-policy-menu" aria-labelledby="Menu Rodapé Política de privacidade">
+                                <ul class="nav row-cols-2 row-cols-md-1 px-0">
+                                                                            <li class="nav-item ">
+                                            <a class="nav-link  mt-3 mt-md-0 font-bold text-light font-size-14 px-0" href="https://www.supremautilitarios.com/institucional/politica-de-privacidade">
+                                                Política de privacidade
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                            <div class="ds-footer-section__secondary-logo col-lg-2 py-2 pr-0">
+                                    </div>
+                    </div>
+
+                    <div class="c-footer__menus--name-cnpj my-2 text-center text-lg-left text-white">
+                                    <p class="pl-0 pr-1 font-size-14">
+                        SUPREMA VEICULOS LTDA
+                    </p>
+                                                    <p class="pl-0 pr-1 font-size-14">
+                        CNPJ: 07.726.448/0003-06
+                    </p>
+                            </div>
+                
+        <div class="row">
+            <div class="ds-footer-section__social col d-flex justify-content-between border-top py-2">
+
+                <div class="block-safe-traffic d-none d-lg-flex py-2 align-items-center mt-auto">
+                    <img class="image footer-logo-safe-traffic mr-1" data-src="https://www.supremautilitarios.com/images/logo-ibama.png" src="" alt="No trânsito, enxergar o outro salva vidas." title="No trânsito, enxergar o outro salva vidas." height="35"/>
+
+
+<span class="footer-safe-traffic ">
+    No trânsito, enxergar o outro salva vidas.
+</span>
+                </div>
+
+                <div class="block-safe-traffic d-flex d-md-none pt-4 align-items-center justify-content-center mt-auto">
+                    <img class="image footer-logo-safe-traffic mr-1" data-src="https://www.supremautilitarios.com/images/logo-ibama.png" src="" alt="No trânsito, enxergar o outro salva vidas." title="No trânsito, enxergar o outro salva vidas." height="35"/>
+
+
+<span class="footer-safe-traffic ">
+    No trânsito, enxergar o outro salva vidas.
+</span>
+                </div>
+
+                                                            <ul class="nav nav-social pt-2 justify-content-center justify-content-lg-start">
+                                                                                                                                        <li class="nav-item pt-3">
+                                            <a href="https://www.facebook.com/people/Suprema-Utilit%C3%A1rios/61567032659114/" class="nav-link text-light  px-3 pr-md-3 pl-md-0" id="footer-social-item-12002" aria-label="square-facebook" target="_blank" rel="noopener" style="height: 45px; width: 45px">
+        <i class="fab fa-square-facebook font-size-30" style="vertical-align: middle"></i>
+    </a>
+                                        </li>
+                                                                                                                                                <li class="nav-item pt-3">
+                                            <a href="https://www.instagram.com/suprema_utilitarios/" class="nav-link text-light  px-3 pr-md-3 pl-md-0" id="footer-social-item-12040" aria-label="square-instagram" target="_blank" rel="noopener" style="height: 45px; width: 45px">
+        <i class="fab fa-square-instagram font-size-30" style="vertical-align: middle"></i>
+    </a>
+                                        </li>
+                                                                                                                        </ul>
+                                                </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="block-dealer-company bg-dark-2 text-light font-size-14 text-center py-2 d-flex align-items-center tpl-footer-content-07">
+
+    <a href="https://www.dealerspace.ai/?utm_source=sitedealer&utm_campaign=supremautilitarios.com" class="nav-link text-light px-3 pr-md-3 pl-md-0 d-flex align-items-center mx-auto" id="footer-dealercompany-logo" target="_blank" rel="noopener noreferrer" aria-label="DealerSpace Company Desenvolvido pela DealerSpace ® Direitos Reservados.">
+        <img class="image footer-logo-dealercompany" data-src="https://cdn.dealerspace.ai/logo-dealerspace/icon_dealerspace.webp" src="" alt="DealerSpace Company" title="DealerSpace Company" height="20" width="20" id="footer-logo-dealercompany"/>
+			<span id="footer-text-dealercompany" class="assinatura_delaersites_new">Desenvolvido pela DEALERSPACE ® Direitos Reservados.</span>
+    </a>
+
+	</div>
+</footer>
+
+
+        <div class="container-float-shop-phones-modal">
+            
+                            <div id="ds-whatsapp-talkbot">
+        <ds-whatsapp-talkbot endpoint="https://api.dealerspace.ai" :concierge-url="&quot;&quot;" :has-concierge="false" :concierge-journey="&quot;&quot;" :concierge-token="&quot;&quot;" :params-lead="{&quot;token&quot;:1714,&quot;shop&quot;:7703,&quot;magic&quot;:&quot;&quot;,&quot;lead[origin]&quot;:&quot;1&quot;,&quot;lead[subject]&quot;:&quot;Uma solicita\u00e7\u00e3o de modal whatsapp&quot;,&quot;extra[aceite2]&quot;:&quot;1&quot;,&quot;extra[sub_origem]&quot;:&quot;Qualificador Leads&quot;,&quot;extra[msc_ano_modelo]&quot;:&quot;2026&quot;,&quot;extra[user_url]&quot;:&quot;https:\/\/www.supremautilitarios.com\/wp-content\/uploads\/2024\/11\/13-1.png&quot;,&quot;extra[user_full_url]&quot;:&quot;http:\/\/www.supremautilitarios.com\/wp-content\/uploads\/2024\/11\/13-1.png&quot;,&quot;extra[user_search]&quot;:&quot;&quot;,&quot;extra[utm_source]&quot;:&quot;&quot;,&quot;extra[utm_medium]&quot;:&quot;&quot;,&quot;extra[utm_campaign]&quot;:&quot;&quot;}" :params-class=&quot;new-talkbot&quot; :params-dxp=&quot;&quot; :params-ddm-sem-cpf=&quot;&quot; :models-by-shop="[{&quot;id&quot;:1917,&quot;name&quot;:&quot;TLUX&quot;,&quot;brand_id&quot;:134,&quot;vehicle_versions&quot;:[{&quot;id&quot;:6575,&quot;name&quot;:&quot;TLUX&quot;,&quot;vehicle_model_id&quot;:1917,&quot;active&quot;:1,&quot;deleted_at&quot;:null,&quot;fipe&quot;:&quot;&quot;,&quot;price&quot;:&quot;0.00000&quot;,&quot;build_year&quot;:&quot;2025&quot;,&quot;model_year&quot;:&quot;2025&quot;,&quot;pivot&quot;:{&quot;shop_id&quot;:7703,&quot;vehicle_version_id&quot;:6575}}]}]" :template-id="&quot;01&quot;" :link-whatsapp="{&quot;geral&quot;:&quot;tel:+556133638060&quot;}" :lead-qualifier="[{&quot;use_custom_image&quot;:1,&quot;custom_image&quot;:&quot;https:\/\/dealersites-content.s3.amazonaws.com\/modelo-shineray\/logo\/shineray-favicon.webp&quot;,&quot;use_welcome_message&quot;:0,&quot;welcome_message&quot;:null,&quot;title&quot;:&quot;Atendimento pelo WhatsApp&quot;,&quot;position&quot;:1,&quot;enable_model_selector&quot;:1,&quot;categories&quot;:[{&quot;id&quot;:6737,&quot;custom_name&quot;:&quot;Ve\u00edculos Novos&quot;,&quot;shop_phone&quot;:&quot;(61) 3363-8060&quot;,&quot;lead_type_id&quot;:203},{&quot;id&quot;:6738,&quot;custom_name&quot;:&quot;P\u00f3s-Vendas&quot;,&quot;shop_phone&quot;:&quot;(61) 3363-8060&quot;,&quot;lead_type_id&quot;:204},{&quot;id&quot;:6739,&quot;custom_name&quot;:&quot;Ve\u00edculos Seminovos&quot;,&quot;shop_phone&quot;:&quot;(61) 3363-8060&quot;,&quot;lead_type_id&quot;:226}]}]" :btn-type="&quot;default&quot;" :brand-name="&quot;Shineray&quot;" :button-label="&quot;ATENDIMENTO&quot;"></ds-whatsapp-talkbot>
+</div>
+
+            
+            
+            
+            
+                    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+                    <div id="cookies-privacy" class="section-cookies-privacy bg-info text-dark fixed-bottom py-3 d-none">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-1 col-12">
+                <div class="icon-cookies font-size-25 text-center">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12 mb-lg-0 mb-md-0 mb-2">
+                <div class="text-cookies font-size-12">
+                   Para otimizar sua experiência durante a navegação, fazemos uso de nossa política de cookies e para proteger seus dados pessoais respeitamos nossa <a class="font-bold" href="/institucional/politica-de-privacidade" aria-label="política de privacidade" target="_blank" rel="noopener noreferrer">política de privacidade</a>. Ao seguir com a navegação e visita você concorda com nossas políticas.
+                </div>
+            </div>
+            <div class="col-lg-2 col-6">
+                <button id="btn-cookies-privacy" type="button" class="btn-cookies-privacy btn btn-secondary btn-block font-size-14">Aceitar</button>
+            </div>
+            <div class="col-lg-2 col-6">
+                <button id="refuse-btn-cookies-privacy" type="button" class="btn-cookies-privacy-refuse btn btn-secondary btn-block font-size-14">Recusar</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">const shouldSendToMotoLeads=false;const currentSiteShop=null||{};</script>
+
+        
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" defer src="/js/templates/base.js?id=9c6034defb9522ba54ed0283ab417c78"></script>
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" defer src="/js/templates/template-01.js?id=ffd11013648033769e46d6ddb18545c3"></script>
+
+        
+                    
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" type="text/javascript">document.addEventListener('DOMContentLoaded',function(){let address="/institucional/politica-de-privacidade";document.querySelectorAll("[for*='declaro-que-li-e-concordo']").forEach(function(el){if(el){let linkEl=el.querySelector('a');if(linkEl){linkEl.href='';linkEl.href=address;linkEl.target='_blank';}}});});</script>
+                <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2"></script>
+
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">
+document.addEventListener('DOMContentLoaded', () => {
+  const firstCatBtn = document.querySelector('#accCats .acc-toggle-cat');
+  if (firstCatBtn && firstCatBtn.getAttribute('aria-expanded') !== 'true') {
+    firstCatBtn.click();
+  }
+});
+</script>
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">
+    document.addEventListener('DOMContentLoaded', () => {
+        const shopItems = document.querySelectorAll('.c-selector-button-shops__content .dropdown-item');
+        const activeShopId = localStorage.getItem('activeShop');
+        if (activeShopId) {
+            const activeShop = document.querySelector('.c-selector-button-shops__content .dropdown-item[data-id="' + activeShopId + '"]');
+            if (activeShop) activeShop.classList.add('active-shop');
+        }
+        shopItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const id = item.getAttribute('data-id');
+                localStorage.setItem('activeShop', id);
+            });
+        });
+    });
+</script>
+    <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" defer>document.addEventListener('DOMContentLoaded',function(){$('.btn-toggle-content').on('click',function(){var classOpened='fa-solid fa-plus pl-2';var classClosed='fa-solid fa-minus pl-2';var icon=$(this).find('i');if(icon.hasClass('fa-minus')){icon.addClass('fa-plus');icon.removeClass('fa-minus');}else{icon.addClass('fa-minus');icon.removeClass('fa-plus');}});})</script>
+<script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">
+    document.addEventListener("DOMContentLoaded", function () {
+        const originalText = "ATENDIMENTO";
+        const hoverText = "WhatsApp";
+
+        let attempts = 0;
+        const maxAttempts = 20;
+
+        const interval = setInterval(() => {
+            const button = document.querySelector("#c-ds-whatsapp-talkbot");
+            const strong = button?.querySelector("strong");
+
+            if (button && strong && strong.innerText.trim() === originalText) {
+                if (!button.dataset.hoverListenerAdded) {
+                    button.addEventListener("mouseenter", () => {
+                        strong.innerText = hoverText;
+                    });
+
+                    button.addEventListener("mouseleave", () => {
+                        strong.innerText = originalText;
+                    });
+
+                    button.dataset.hoverListenerAdded = "true";
+                }
+
+                clearInterval(interval);
+            }
+
+            if (++attempts >= maxAttempts) {
+                clearInterval(interval);
+            }
+        }, 500);
+    });
+</script>
+
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2">var modalShopSelectorStatus=true;</script>
+        <!-- Swiper JS -->
+        <script nonce="ed18gBX4gvZnxQDcTAjom5UCkSNe44s2" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            </body>
+</html>
