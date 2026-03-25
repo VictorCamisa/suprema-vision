@@ -99,7 +99,7 @@ const HeroSection = () => {
                 style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
               />
               <img
-                src="https://supremautilitarios.com/wp-content/uploads/2024/10/Fotos-TLUX-1-1536x1024-1.png"
+                src={t30Front}
                 alt="Shineray T30 — Vista frontal"
                 className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
               />
