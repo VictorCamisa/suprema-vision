@@ -112,7 +112,7 @@ const TechSpecs = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vi%20a%20ficha%20t%C3%A9cnica%20do%20T30%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&utm_source=site&utm_medium=ficha_tecnica&utm_content=cta_specs"
+            href="https://wa.me/556133638060?text=Ol%C3%A1%2C%20vi%20a%20ficha%20t%C3%A9cnica%20do%20T30%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&utm_source=site&utm_medium=ficha_tecnica&utm_content=cta_specs"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-whatsapp text-base px-8 py-4"
