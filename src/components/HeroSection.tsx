@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
-import lifestyleHero from "@/assets/lifestyle-hero.jpg";
-import t30Front from "@/assets/t30-front.png";
+import t30Banner from "@/assets/t30-real-front.webp";
+import t30White from "@/assets/t30-real-white.webp";
 
 const whatsappUrl =
-  "https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
+  "https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src={lifestyleHero}
+            src={t30Banner}
             alt=""
             className="w-full h-full object-cover"
             aria-hidden="true"
@@ -35,12 +35,6 @@ const HeroSection = () => {
             style={{ background: "radial-gradient(circle, hsl(213 94% 47%), transparent 70%)" }}
             animate={{ scale: [1, 1.15, 1], x: [0, 20, 0] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full opacity-[0.05]"
-            style={{ background: "radial-gradient(circle, hsl(213 94% 60%), transparent 70%)" }}
-            animate={{ scale: [1.1, 1, 1.1] }}
-            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
 
@@ -83,7 +77,7 @@ const HeroSection = () => {
                   className="inline-flex items-center gap-2 font-bold text-sm px-8 py-4 rounded-xl border-2 border-white/15 text-white hover:bg-white/10 transition-all duration-300 justify-center backdrop-blur-sm"
                 >
                   <Phone size={18} />
-                  Ligar Agora
+                  (61) 3363-8060
                 </a>
               </div>
             </motion.div>
@@ -100,7 +94,7 @@ const HeroSection = () => {
                 style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
               />
               <img
-                src={t30Front}
+                src={t30White}
                 alt="Shineray T30 — Vista frontal"
                 className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
               />

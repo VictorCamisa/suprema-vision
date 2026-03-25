@@ -95,7 +95,7 @@ const ValuePillars = () => {
               className="mt-8"
             >
               <a
-                href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20diferenciais%20do%20T30.&utm_source=site&utm_medium=pilares&utm_content=cta_pilares"
+                href="https://wa.me/556133638060?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20diferenciais%20do%20T30.&utm_source=site&utm_medium=pilares&utm_content=cta_pilares"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp text-base px-8 py-4"
