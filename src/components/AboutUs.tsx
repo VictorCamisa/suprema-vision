@@ -49,7 +49,7 @@ const AboutUs = () => {
           >
             <div className="lifestyle-image group">
               <img
-                src="https://supremautilitarios.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-02-at-13.17.39.jpeg"
+                src={concessionariaImg}
                 alt="Concessionária Suprema Utilitários Brasília"
                 className="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
