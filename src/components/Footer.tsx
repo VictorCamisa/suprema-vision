@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { MapPin, Phone, Clock, Instagram, Youtube, Facebook, MessageCircle, ArrowUp, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram, Facebook, MessageCircle, ArrowUp, ArrowUpRight } from "lucide-react";
 import logoSuprema from "@/assets/logo-suprema.png";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border">
       {/* CTA */}
-      <div className="section-navy-mesh section-rich py-16 text-center">
+      <div className="section-navy-mesh section-rich py-12 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white">
             Pronto para conhecer o T30?
@@ -17,7 +16,7 @@ const Footer = () => {
             Agende seu test drive ou fale com um consultor agora mesmo.
           </p>
           <a
-            href="https://wa.me/5561993972226?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20test%20drive%20do%20T30.&utm_source=site&utm_medium=footer&utm_content=cta_footer"
+            href="https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20test%20drive%20do%20T30.&utm_source=site&utm_medium=footer&utm_content=cta_footer"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-whatsapp text-base px-10 py-4"
@@ -30,11 +29,11 @@ const Footer = () => {
       </div>
 
       {/* Info */}
-      <div className="section-light-grid section-rich py-12">
+      <div className="section-light-grid section-rich py-10">
         <div className="container mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <img src={logoSuprema} alt="Suprema Utilitários" className="h-10 mb-4" />
+              <img src={logoSuprema} alt="Suprema Utilitários" className="h-14 mb-4" />
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Concessionária autorizada Shineray em Brasília. Parte do Grupo Suprema — desde 1994.
               </p>
@@ -47,13 +46,19 @@ const Footer = () => {
                   <Phone size={14} className="text-primary" />
                   <a href="tel:+556133638060" className="hover:text-foreground transition-colors">(61) 3363-8060</a>
                 </div>
+                <div className="flex items-center gap-2.5">
+                  <MessageCircle size={14} className="text-[#25D366]" />
+                  <a href="https://wa.me/556133638060?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">(61) 3363-8060</a>
+                </div>
                 <div className="flex items-start gap-2.5">
                   <MapPin size={14} className="text-primary mt-0.5" />
-                  <span>SIA, Trecho 02, Lote 370<br />Guará, Brasília/DF</span>
+                  <a href="https://maps.app.goo.gl/ARu3aR7noPgvweXr7" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                    TR SIA Trecho 02 CL Lote<br />SIA, Brasília/DF
+                  </a>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Clock size={14} className="text-primary" />
-                  <span>Seg-Sex 08:00 - 18:00</span>
+                  <span>Seg-Sex 08h às 18h</span>
                 </div>
               </div>
             </div>
@@ -79,9 +84,8 @@ const Footer = () => {
               <h3 className="text-sm font-extrabold uppercase tracking-wider mb-4">Redes Sociais</h3>
               <div className="flex gap-2">
                 {[
-                  { icon: Instagram, href: "https://instagram.com/suprema_utilitarios", label: "Instagram" },
-                  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
-                  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+                  { icon: Instagram, href: "https://www.instagram.com/suprema_utilitarios/", label: "Instagram" },
+                  { icon: Facebook, href: "https://www.facebook.com/supremautilitarios", label: "Facebook" },
                 ].map((social) => (
                   <a
                     key={social.label}
@@ -98,9 +102,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-10 rounded-xl overflow-hidden border border-border h-40">
+          <div className="mt-8 rounded-xl overflow-hidden border border-border h-48">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.6!2d-47.95!3d-15.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSIA+Trecho+02+Brasilia!5e0!3m2!1spt-BR!2sbr!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.051266136126!2d-47.955050899999996!3d-15.8065051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3112309187cf%3A0x30d3b9057913518b!2sSuprema%20-%20SIA!5e1!3m2!1spt-BR!2sbr!4v1767027954239!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { MapPin, Building, Calendar } from "lucide-react";
 import logoSuprema from "@/assets/logo-suprema.png";
-import concessionariaImg from "@/assets/concessionaria.jpg";
+import t30Banner from "@/assets/t30-real-front.webp";
 
 const AboutUs = () => {
   return (
-    <section className="py-16 sm:py-24 section-light-grid section-rich">
+    <section className="py-12 sm:py-16 section-light-grid section-rich">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -50,8 +50,8 @@ const AboutUs = () => {
           >
             <div className="lifestyle-image group">
               <img
-                src={concessionariaImg}
-                alt="Concessionária Suprema Utilitários Brasília"
+                src={t30Banner}
+                alt="Suprema Utilitários — Concessionária Shineray Brasília"
                 className="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
