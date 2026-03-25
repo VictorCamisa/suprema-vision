@@ -40,7 +40,7 @@ const Header = () => {
 
         {/* Logo: centered on mobile, left on desktop */}
         <a href="#hero" className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
-          <img src={logoSuprema} alt="Suprema Utilitários" className="h-14 sm:h-16 w-auto" />
+          <img src={logoSuprema} alt="Suprema Utilitários" className="h-[4.5rem] w-auto" />
         </a>
 
         {/* Mobile: spacer to balance */}
