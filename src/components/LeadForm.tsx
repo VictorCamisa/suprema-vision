@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Shield, Clock, Zap, ArrowUpRight } from "lucide-react";
-import lifestyleConsultant from "@/assets/lifestyle-consultant.jpg";
+import tluxAcessorios from "@/assets/tlux-acessorios.webp";
 
 const whatsappUrl =
   "https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=contato&utm_content=cta_contato";
