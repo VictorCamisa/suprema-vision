@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
-import t30Banner from "@/assets/t30-real-front.webp";
-import t30White from "@/assets/t30-real-white.webp";
+import tluxHero from "@/assets/tlux-gallery-2.webp";
+import tluxColor from "@/assets/tlux-color.webp";
 
 const whatsappUrl =
   "https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
@@ -9,12 +9,10 @@ const whatsappUrl =
 const HeroSection = () => {
   return (
     <section id="hero" className="relative pt-20 overflow-hidden">
-      {/* Hero with lifestyle background */}
       <div className="relative min-h-[85vh] flex items-center">
-        {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src={t30Banner}
+            src={tluxHero}
             alt=""
             className="w-full h-full object-cover"
             aria-hidden="true"
@@ -28,7 +26,6 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Subtle animated orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-[0.08]"
@@ -40,7 +37,6 @@ const HeroSection = () => {
 
         <div className="container mx-auto px-4 py-20 lg:py-28 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -82,7 +78,6 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* Vehicle image */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -94,8 +89,8 @@ const HeroSection = () => {
                 style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
               />
               <img
-                src={t30White}
-                alt="Shineray T30 — Vista frontal"
+                src={tluxColor}
+                alt="Shineray T30 TLUX — Vista oficial"
                 className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
               />
             </motion.div>
@@ -103,7 +98,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Marquee banner */}
       <div className="bg-blue-accent py-3 overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap">
           {Array.from({ length: 16 }).map((_, i) => (
@@ -115,7 +109,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Stats strip */}
       <div className="bg-white border-b border-border">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-3 divide-x divide-border">

@@ -1,14 +1,26 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, X as XIcon, MessageCircle, ArrowUpRight } from "lucide-react";
-import t30Banner from "@/assets/t30-real-front.webp";
-import t30Side from "@/assets/t30-real-side.webp";
-import t30White from "@/assets/t30-real-white.webp";
+import tluxGallery1 from "@/assets/tlux-gallery-1.webp";
+import tluxGallery2 from "@/assets/tlux-gallery-2.webp";
+import tluxGallery3 from "@/assets/tlux-gallery-3.webp";
+import tluxGallery4 from "@/assets/tlux-gallery-4.webp";
+import tluxGallery5 from "@/assets/tlux-gallery-5.webp";
+import tluxGallery6 from "@/assets/tlux-gallery-6.webp";
+import tluxCacamba from "@/assets/tlux-cacamba.webp";
+import tluxPainel from "@/assets/tlux-painel.webp";
+import tluxAcessorios from "@/assets/tlux-acessorios.webp";
 
 const galleryImages = [
-  { src: t30Banner, alt: "Shineray T30 — Vista frontal em ambiente real" },
-  { src: t30Side, alt: "Shineray T30 — Vista lateral" },
-  { src: t30White, alt: "Shineray T30 — Cor branca" },
+  { src: tluxGallery1, alt: "Shineray TLUX T30 — Vista frontal" },
+  { src: tluxGallery2, alt: "Shineray TLUX T30 — Vista lateral" },
+  { src: tluxGallery3, alt: "Shineray TLUX T30 — Vista traseira" },
+  { src: tluxGallery4, alt: "Shineray TLUX T30 — Ângulo 3/4" },
+  { src: tluxGallery5, alt: "Shineray TLUX T30 — Detalhe frontal" },
+  { src: tluxGallery6, alt: "Shineray TLUX T30 — Em movimento" },
+  { src: tluxCacamba, alt: "Shineray TLUX T30 — Caçamba" },
+  { src: tluxPainel, alt: "Shineray TLUX T30 — Painel" },
+  { src: tluxAcessorios, alt: "Shineray TLUX T30 — Acessórios" },
 ];
 
 const Gallery = () => {
@@ -43,7 +55,6 @@ const Gallery = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-5">
-          {/* Carousel */}
           <div
             className="relative bg-card rounded-2xl border border-border overflow-hidden aspect-video flex items-center justify-center group cursor-pointer shadow-sm"
             onClick={() => setLightbox(true)}
@@ -87,7 +98,6 @@ const Gallery = () => {
             </div>
           </div>
 
-          {/* Thumbnails */}
           <div className="flex gap-3 overflow-x-auto pb-1">
             {galleryImages.map((img, i) => (
               <button
@@ -102,12 +112,11 @@ const Gallery = () => {
             ))}
           </div>
 
-          {/* Video */}
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-card border border-border shadow-sm">
             {showVideo ? (
               <iframe
-                src="https://www.youtube.com/embed/pWkQO284Tow?autoplay=1"
-                title="Shineray T30 — Vídeo"
+                src="https://www.youtube.com/embed/L-h6D_mDj6w?autoplay=1"
+                title="Shineray TLUX T30 — Vídeo oficial"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"
@@ -118,7 +127,7 @@ const Gallery = () => {
                 <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg">
                   <Play size={28} className="text-primary-foreground ml-1" />
                 </div>
-                <span className="text-sm font-semibold text-muted-foreground">Assistir vídeo</span>
+                <span className="text-sm font-semibold text-muted-foreground">Assistir vídeo oficial</span>
               </button>
             )}
           </div>
@@ -138,7 +147,6 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {lightbox && (
           <motion.div
