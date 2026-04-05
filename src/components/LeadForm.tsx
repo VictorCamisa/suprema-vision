@@ -18,8 +18,8 @@ const LeadForm = () => {
             className="lifestyle-image hidden md:block"
           >
             <img
-              src={lifestyleConsultant}
-              alt="Consultor atendendo cliente na concessionária"
+              src={tluxAcessorios}
+              alt="Shineray TLUX T30 — Interior e acessórios"
               className="w-full h-full object-cover aspect-[4/5]"
               loading="lazy"
             />

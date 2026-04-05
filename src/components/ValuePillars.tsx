@@ -39,8 +39,8 @@ const ValuePillars = () => {
             className="lifestyle-image hidden lg:block"
           >
             <img
-              src={lifestyleDelivery}
-              alt="Entregador usando o Shineray T30 no trabalho"
+              src={tluxCacamba}
+              alt="Shineray TLUX T30 — Caçamba oficial"
               className="w-full h-full object-cover aspect-[4/5]"
               loading="lazy"
             />
