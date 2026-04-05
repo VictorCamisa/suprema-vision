@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Building, Calendar } from "lucide-react";
 import logoSuprema from "@/assets/logo-suprema.png";
-import t30Banner from "@/assets/t30-real-front.webp";
+import tluxGallery5 from "@/assets/tlux-gallery-5.webp";
 
 const AboutUs = () => {
   return (
@@ -50,8 +50,8 @@ const AboutUs = () => {
           >
             <div className="lifestyle-image group">
               <img
-                src={t30Banner}
-                alt="Suprema Utilitários — Concessionária Shineray Brasília"
+                src={tluxGallery5}
+                alt="Shineray TLUX T30 — Foto oficial Shineray"
                 className="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
