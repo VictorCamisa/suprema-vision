@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { IdCard, Package, TrendingDown, MessageCircle, ArrowUpRight } from "lucide-react";
-import lifestyleDelivery from "@/assets/lifestyle-delivery.jpg";
+import tluxCacamba from "@/assets/tlux-cacamba.webp";
 
 const pillars = [
   {
