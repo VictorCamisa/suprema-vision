@@ -78,22 +78,6 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="relative hidden lg:block"
-            >
-              <div
-                className="absolute inset-0 blur-3xl opacity-15 scale-90"
-                style={{ background: "radial-gradient(ellipse at center, hsl(213 94% 47%), transparent 70%)" }}
-              />
-              <img
-                src={tluxColor}
-                alt="Shineray T30 TLUX — Vista oficial"
-                className="w-full max-w-xl mx-auto relative z-10 drop-shadow-2xl"
-              />
-            </motion.div>
           </div>
         </div>
       </div>
