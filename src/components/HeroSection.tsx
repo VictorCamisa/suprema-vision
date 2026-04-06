@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
+import { Phone, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxHero from "@/assets/tlux-gallery-2.webp";
 import tluxColor from "@/assets/tlux-color.webp";
 
@@ -64,7 +65,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                   className="btn-whatsapp text-base px-8 py-4 justify-center"
                 >
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} />
                   Fale com um consultor
                   <ArrowUpRight size={16} />
                 </a>

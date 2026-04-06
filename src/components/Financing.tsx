@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { CreditCard, Building, Calculator, MessageCircle, ArrowUpRight } from "lucide-react";
+import { CreditCard, Building, Calculator, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { useEffect, useRef, useState } from "react";
 
 const whatsappFinance =
@@ -97,7 +98,7 @@ const Financing = () => {
             rel="noopener noreferrer"
             className="btn-primary text-base px-8 py-4"
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} />
             Simular Financiamento
             <ArrowUpRight size={16} />
           </a>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Gauge, Fuel, Ruler, Shield, Settings, Zap, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Gauge, Fuel, Ruler, Shield, Settings, Zap, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const specGroups = [
   {
@@ -117,7 +118,7 @@ const TechSpecs = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp text-base px-8 py-4"
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} />
             Solicitar Proposta
             <ArrowUpRight size={16} />
           </a>

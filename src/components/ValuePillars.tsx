@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { IdCard, Package, TrendingDown, MessageCircle, ArrowUpRight } from "lucide-react";
+import { IdCard, Package, TrendingDown, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxCacamba from "@/assets/tlux-cacamba.webp";
 
 const pillars = [
@@ -100,7 +101,7 @@ const ValuePillars = () => {
                 rel="noopener noreferrer"
                 className="btn-whatsapp text-base px-8 py-4"
               >
-                <MessageCircle size={18} />
+                <WhatsAppIcon size={18} />
                 Tire suas Dúvidas
                 <ArrowUpRight size={16} />
               </a>

@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Play, X as XIcon, MessageCircle, ArrowUpRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X as XIcon, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxGallery1 from "@/assets/tlux-gallery-1.webp";
 import tluxGallery2 from "@/assets/tlux-gallery-2.webp";
 import tluxGallery3 from "@/assets/tlux-gallery-3.webp";
@@ -139,7 +140,7 @@ const Gallery = () => {
               rel="noopener noreferrer"
               className="btn-whatsapp text-base px-8 py-4"
             >
-              <MessageCircle size={18} />
+              <WhatsAppIcon size={18} />
               Agendar Test Drive
               <ArrowUpRight size={16} />
             </a>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { AnimatePresence, motion } from "framer-motion";
 import logoSuprema from "@/assets/logo-suprema.png";
 
@@ -66,7 +67,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            <MessageCircle size={16} />
+            <WhatsAppIcon size={16} />
             Falar com Consultor
             <ArrowUpRight size={14} />
           </a>
