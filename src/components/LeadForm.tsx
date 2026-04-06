@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Shield, Clock, Zap, ArrowUpRight } from "lucide-react";
+import { Shield, Clock, Zap, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxAcessorios from "@/assets/tlux-acessorios.webp";
 
 const whatsappUrl =

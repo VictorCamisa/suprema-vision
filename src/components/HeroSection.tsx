@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
+import { Phone, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxHero from "@/assets/tlux-gallery-2.webp";
 import tluxColor from "@/assets/tlux-color.webp";
 

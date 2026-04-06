@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { IdCard, Package, TrendingDown, MessageCircle, ArrowUpRight } from "lucide-react";
+import { IdCard, Package, TrendingDown, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import tluxCacamba from "@/assets/tlux-cacamba.webp";
 
 const pillars = [

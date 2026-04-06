@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { CreditCard, Building, Calculator, MessageCircle, ArrowUpRight } from "lucide-react";
+import { CreditCard, Building, Calculator, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { useEffect, useRef, useState } from "react";
 
 const whatsappFinance =

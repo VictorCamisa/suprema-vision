@@ -1,4 +1,5 @@
-import { MapPin, Phone, Clock, Instagram, Facebook, MessageCircle, ArrowUp, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram, Facebook, ArrowUp, ArrowUpRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import logoSuprema from "@/assets/logo-suprema.png";
 
 const Footer = () => {
