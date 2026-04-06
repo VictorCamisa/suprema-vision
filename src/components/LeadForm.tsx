@@ -8,7 +8,7 @@ const whatsappUrl =
 
 const LeadForm = () => {
   return (
-    <section id="contato" className="py-16 sm:py-24 section-light-diagonal section-rich">
+    <section id="contato" className="py-12 sm:py-16 section-light-diagonal section-rich">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Lifestyle image */}

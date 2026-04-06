@@ -29,7 +29,7 @@ const pillars = [
 
 const ValuePillars = () => {
   return (
-    <section id="pilares" className="py-16 sm:py-24 section-light-grid section-rich">
+    <section id="pilares" className="py-12 sm:py-16 section-light-grid section-rich">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* Lifestyle image */}

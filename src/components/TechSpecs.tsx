@@ -57,7 +57,7 @@ const specGroups = [
 
 const TechSpecs = () => {
   return (
-    <section id="ficha-tecnica" className="py-16 sm:py-24 section-navy-mesh section-rich">
+    <section id="ficha-tecnica" className="py-12 sm:py-16 section-navy-mesh section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
