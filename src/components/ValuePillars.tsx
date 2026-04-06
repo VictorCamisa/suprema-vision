@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { IdCard, Package, TrendingDown, ArrowUpRight } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
-import tluxCacamba from "@/assets/t30-lateral.jpg";
+import tluxCacamba from "@/assets/t30-traseira.jpg";
 
 const pillars = [
   {
