@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist.</Message>
+  <RequestId>69D3AF89433CFD363817658A</RequestId>
+  <HostId>shfrfrancenewsite.oss-us-east-1.aliyuncs.com</HostId>
+  <BucketName>shfrfrancenewsite</BucketName>
+  <EC>0015-00000101</EC>
+  <RecommendDoc>https://api.alibabacloud.com/troubleshoot?q=0015-00000101</RecommendDoc>
+</Error>
