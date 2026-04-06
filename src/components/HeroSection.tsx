@@ -65,7 +65,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                   className="btn-whatsapp text-base px-8 py-4 justify-center"
                 >
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} />
                   Fale com um consultor
                   <ArrowUpRight size={16} />
                 </a>

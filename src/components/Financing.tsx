@@ -98,7 +98,7 @@ const Financing = () => {
             rel="noopener noreferrer"
             className="btn-primary text-base px-8 py-4"
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} />
             Simular Financiamento
             <ArrowUpRight size={16} />
           </a>

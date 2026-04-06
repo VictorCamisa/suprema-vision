@@ -49,7 +49,7 @@ const LeadForm = () => {
               rel="noopener noreferrer"
               className="btn-whatsapp text-lg px-10 py-5 justify-center md:justify-start"
             >
-              <MessageCircle size={22} />
+              <WhatsAppIcon size={22} />
               Falar no WhatsApp
               <ArrowUpRight size={18} />
             </a>

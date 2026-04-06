@@ -22,7 +22,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp text-base px-10 py-4"
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} />
             Agendar Test Drive
             <ArrowUpRight size={16} />
           </a>
@@ -48,7 +48,7 @@ const Footer = () => {
                   <a href="tel:+556133638060" className="hover:text-foreground transition-colors">(61) 3363-8060</a>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <MessageCircle size={14} className="text-[#25D366]" />
+                  <WhatsAppIcon size={14} className="text-[#25D366]" />
                   <a href="https://wa.me/556133638060?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">(61) 3363-8060</a>
                 </div>
                 <div className="flex items-start gap-2.5">

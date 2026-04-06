@@ -118,7 +118,7 @@ const TechSpecs = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp text-base px-8 py-4"
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} />
             Solicitar Proposta
             <ArrowUpRight size={16} />
           </a>

@@ -67,7 +67,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            <MessageCircle size={16} />
+            <WhatsAppIcon size={16} />
             Falar com Consultor
             <ArrowUpRight size={14} />
           </a>
