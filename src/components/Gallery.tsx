@@ -2,24 +2,24 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, X as XIcon, ArrowUpRight } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import t30Frontal from "@/assets/t30-frontal.jpg";
+import t30Lateral from "@/assets/t30-lateral.jpg";
+import t30Traseira from "@/assets/t30-traseira.jpg";
+import t30LateralPrata from "@/assets/t30-lateral-prata.jpeg";
+import t30Completo from "@/assets/t30-completo.webp";
 import tluxGallery1 from "@/assets/tlux-gallery-1.webp";
 import tluxGallery2 from "@/assets/tlux-gallery-2.webp";
-import tluxGallery3 from "@/assets/tlux-gallery-3.webp";
-import tluxGallery4 from "@/assets/tlux-gallery-4.webp";
-import tluxGallery5 from "@/assets/tlux-gallery-5.webp";
-import tluxGallery6 from "@/assets/tlux-gallery-6.webp";
-import tluxCacamba from "@/assets/tlux-cacamba.webp";
 import tluxPainel from "@/assets/tlux-painel.webp";
 import tluxAcessorios from "@/assets/tlux-acessorios.webp";
 
 const galleryImages = [
-  { src: tluxGallery1, alt: "Shineray TLUX T30 — Vista frontal" },
-  { src: tluxGallery2, alt: "Shineray TLUX T30 — Vista lateral" },
-  { src: tluxGallery3, alt: "Shineray TLUX T30 — Vista traseira" },
-  { src: tluxGallery4, alt: "Shineray TLUX T30 — Ângulo 3/4" },
-  { src: tluxGallery5, alt: "Shineray TLUX T30 — Detalhe frontal" },
-  { src: tluxGallery6, alt: "Shineray TLUX T30 — Em movimento" },
-  { src: tluxCacamba, alt: "Shineray TLUX T30 — Caçamba" },
+  { src: t30Frontal, alt: "Shineray T30 — Vista frontal" },
+  { src: t30Lateral, alt: "Shineray T30 — Vista lateral completa" },
+  { src: t30Traseira, alt: "Shineray T30 — Vista traseira com caçamba" },
+  { src: t30LateralPrata, alt: "Shineray T30 — Vista lateral prata" },
+  { src: t30Completo, alt: "Shineray TLUX T30 — Vista completa na fábrica" },
+  { src: tluxGallery1, alt: "Shineray TLUX T30 — Lifestyle frontal" },
+  { src: tluxGallery2, alt: "Shineray TLUX T30 — Lifestyle lateral" },
   { src: tluxPainel, alt: "Shineray TLUX T30 — Painel" },
   { src: tluxAcessorios, alt: "Shineray TLUX T30 — Acessórios" },
 ];

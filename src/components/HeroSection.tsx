@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Phone, ArrowUpRight } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
-import tluxHero from "@/assets/tlux-gallery-2.webp";
-import tluxColor from "@/assets/tlux-color.webp";
+import tluxHero from "@/assets/t30-completo.webp";
+import tluxColor from "@/assets/t30-frontal.jpg";
 
 const whatsappUrl =
   "https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=hero&utm_content=cta_hero";
