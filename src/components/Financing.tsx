@@ -41,7 +41,7 @@ function AnimatedPrice() {
 
 const Financing = () => {
   return (
-    <section id="financiamento" className="py-16 sm:py-24 section-light-diagonal section-rich">
+    <section id="financiamento" className="py-12 sm:py-16 section-light-diagonal section-rich">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
