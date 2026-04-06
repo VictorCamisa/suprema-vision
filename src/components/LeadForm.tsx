@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Clock, Zap, ArrowUpRight } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
-import tluxAcessorios from "@/assets/tlux-acessorios.webp";
+import negociacaoT30 from "@/assets/negociacao-t30.jpg";
 
 const whatsappUrl =
   "https://wa.me/556133638060?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Shineray%20T30.&utm_source=site&utm_medium=contato&utm_content=cta_contato";
@@ -19,8 +19,8 @@ const LeadForm = () => {
             className="lifestyle-image hidden md:block"
           >
             <img
-              src={tluxAcessorios}
-              alt="Shineray TLUX T30 — Interior e acessórios"
+              src={negociacaoT30}
+              alt="Negociação do Shineray T30 em concessionária"
               className="w-full h-full object-cover aspect-[4/5]"
               loading="lazy"
             />
