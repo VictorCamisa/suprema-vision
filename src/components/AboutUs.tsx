@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Building, Calendar } from "lucide-react";
 import logoSuprema from "@/assets/logo-suprema.png";
-import tluxGallery5 from "@/assets/tlux-gallery-5.webp";
+import tluxGallery5 from "@/assets/t30-completo.webp";
 
 const AboutUs = () => {
   return (
